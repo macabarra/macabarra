@@ -35,7 +35,6 @@ recovery ~ total sugars          all entries   0              NaN               
     LT50 ~ total sugars          all entries 135              NaN                  NaN         0.246 -0.220      -2.83 0.250 6.386907e-10                          NaN
 
 Contrastes de azúcares (Welch)
-  omitidos: faltan los datos de azúcares tras la congelación
 
 Control de calidad
                    file            group  columns  rows  rows_11_15_equal_rows_6_10  rows_11_15_equal_rows_1_5  rows_6_10_equal_rows_1_5  any_repeated_block
@@ -65,7 +64,7 @@ Figuras
   Fig2_LT50_INT_species.png, Fig2_LT50_INT_species.tif
   Fig3_LT50_INT_accessions.png, Fig3_LT50_INT_accessions.tif
   Fig4BD_LT50_damage.png, Fig4BD_LT50_damage.tif
-  Fig. 5 omitida: faltan data/raw/sugar_freezing_species.csv y sugar_freezing_accessions.csv
+  Fig5_soluble_sugars.png, Fig5_soluble_sugars.tif
   Fig. 6 omitida: faltan data/raw/recovery_species.csv y recovery_accessions.csv
   Fig. 7 omitida: faltan los archivos de recuperación
   Fig8_sugars_LT50.png, Fig8_sugars_LT50.tif

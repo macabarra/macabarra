@@ -28,7 +28,7 @@ La salida queda en `outputs/figures` (PNG y TIFF LZW a 300 dpi), `outputs/tables
 | Fig. S2, LT10–LT90, LT50 e INT | `LT_INT_*.csv` | completa |
 | Fig. 2 y Fig. 3, LT50 frente a INT | `LT_INT_*.csv` | completa |
 | Fig. 4B y Fig. 4D, LT50 frente a daño | `LT50_Damage_*.csv` | completa (4A y 4C son fotos) |
-| Fig. 5, azúcares control frente a congelación (Welch) | `sugar_*.csv` + `sugar_freezing_*.csv` | falta `sugar_freezing_*.csv` |
+| Fig. 5, azúcares control frente a congelación (Welch, n = 5 plantas) | `sugars_control_freezing.tsv` (columnas `A…`) | completa; los asteriscos coinciden con la figura publicada en las 54 comparaciones |
 | Fig. 6, recuperación frente a LT50 | `recovery_*.csv` | faltan los datos de recuperación |
 | Fig. 7, azúcares frente a recuperación | `sugar_*.csv` + `recovery_*.csv` | faltan los datos de recuperación |
 | Fig. 8, azúcares frente a LT50 | `sugar_*.csv`, `LT50_Damage_species.csv`, `LT_INT_accessions.csv` | completa |
@@ -39,9 +39,8 @@ La Fig. 1 (imágenes de Fv/Fm del IMAGING-PAM) no se genera desde tablas.
 ### Archivos que faltan
 
 Al agregarlos a `data/raw`, `run_all.py` genera las figuras pendientes sin cambiar el código.
+`sugars_control_freezing.tsv` no trae recuperación; las columnas `N…` no se usan.
 
-- `sugar_freezing_species.csv` y `sugar_freezing_accessions.csv`: mismo formato que
-  `sugar_species.csv` y `sugar_accessions.csv`, con los azúcares medidos 10 h después de la helada.
 - `recovery_species.csv` y `recovery_accessions.csv`: separador `;`, columnas
   `grupo;Fv/Fm inicial;Fv/Fm final` (o `grupo;Recovery`), 15 filas por grupo en el mismo
   orden que `LT50_Damage_species.csv` y `LT_INT_accessions.csv`.

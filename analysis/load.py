@@ -92,6 +92,35 @@ def load_sugars(level: str, treatment: str = "control") -> pd.DataFrame | None:
     return _finish(df)
 
 
+def load_sugars_treatments() -> pd.DataFrame | None:
+    """Azúcares de hoja en control y congelación (sugars_control_freezing.tsv).
+
+    Usa las columnas que empiezan con 'A' (las que coinciden con
+    sugar_species.csv y sugar_accessions.csv). Las columnas 'N' no se usan.
+    El total es la suma de los cinco azúcares. Una fila por planta.
+    """
+    path = RAW / "sugars_control_freezing.tsv"
+    if not path.exists():
+        return None
+    df = pd.read_csv(path, sep="\t", decimal=",")
+    a = {c: c for c in df.columns if c.startswith("A")}
+    ren = {"Genotype": "group", "Treatment": "treatment"}
+    for c in a:
+        low = c.lower()
+        for key, name in (("fructose", "fructose"), ("glucose", "glucose"),
+                          ("sacarose", "sucrose"), ("rafinose", "raffinose"),
+                          ("estaquiose", "stachyose")):
+            if key in low:
+                ren[c] = name
+    df = df.rename(columns=ren)[["group", "treatment"] + SUGARS[:-1]]
+    df["total"] = df[SUGARS[:-1]].sum(axis=1)
+    df["treatment"] = df["treatment"].str.strip().str.lower()
+    df["group"] = (df["group"].map(normalize_name)
+                   .str.replace("angustifolium", "angustifolius"))
+    df["plant"] = df.groupby(["group", "treatment"]).cumcount()
+    return df.reset_index(drop=True)
+
+
 def load_recovery(level: str) -> pd.DataFrame | None:
     """Recuperación fotoquímica por hoja: recovery_{level}.csv.
 

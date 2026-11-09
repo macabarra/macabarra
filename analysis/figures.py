@@ -185,34 +185,33 @@ FIG5_ORDER = ["V. faba", "P. sativum", "L. mutabilis", "L. angustifolius", "L. a
 def sugar_contrasts():
     """Medias ± SE y prueba de Welch (n = 5 plantas) para cada azúcar y entrada.
 
-    Devuelve None si faltan los archivos de azúcares tras la congelación.
+    Datos: sugars_control_freezing.tsv. Devuelve None si el archivo no existe.
     """
+    d = load.load_sugars_treatments()
+    if d is None:
+        return None
     parts = []
-    for level in ("species", "accessions"):
-        c = load.load_sugars(level, "control")
-        f = load.load_sugars(level, "freezing")
-        if f is None:
-            return None
-        c, f = load.plants_only(c), load.plants_only(f)
-        for g in c["group"].unique():
-            for s, _ in SUGAR_PANELS:
-                a, b = c.loc[c.group == g, s], f.loc[f.group == g, s]
-                if a.std() == 0 and b.std() == 0:
-                    t, p = np.nan, np.nan
-                else:
-                    t, p = welch(a, b)
-                parts.append({"group": g, "sugar": s, "control_mean": a.mean(),
-                              "control_se": a.sem(), "freezing_mean": b.mean(),
-                              "freezing_se": b.sem(), "welch_t": t, "p": p,
-                              "signif": stars(p)})
+    for g in FIG5_ORDER:
+        c = d[(d.group == g) & (d.treatment == "control")]
+        f = d[(d.group == g) & (d.treatment == "freezing")]
+        for s, _ in SUGAR_PANELS:
+            a, b = c[s], f[s]
+            if a.std() == 0 and b.std() == 0:
+                t, p = np.nan, np.nan
+            else:
+                t, p = welch(a, b)
+            parts.append({"group": g, "sugar": s, "n_control": len(a),
+                          "n_freezing": len(b), "control_mean": a.mean(),
+                          "control_se": a.sem(), "freezing_mean": b.mean(),
+                          "freezing_se": b.sem(), "welch_t": t, "p": p,
+                          "signif": stars(p)})
     return pd.DataFrame(parts)
 
 
 def fig5():
     res = sugar_contrasts()
     if res is None:
-        print("  Fig. 5 omitida: faltan data/raw/sugar_freezing_species.csv y "
-              "sugar_freezing_accessions.csv")
+        print("  Fig. 5 omitida: falta data/raw/sugars_control_freezing.tsv")
         return None
     fig, axes = plt.subplots(2, 3, figsize=(16, 10))
     y = np.arange(len(FIG5_ORDER))[::-1]
