@@ -65,9 +65,14 @@ exactamente las filas 6–10. Ocurre en `FP.csv` (los 9 grupos), en `LT_INT_spec
 en la LT50 de `LT50_Damage_species.csv`. La Tabla S1 publicada usa las 15 filas, así que el
 código las mantiene, pero en esos grupos hay 10 valores distintos, no 15.
 
-`outputs/tables/QC_total_sugar_vs_sum.csv` lista las filas donde `Total Sugar` no es la suma
-de los cinco azúcares: C102, planta 3 (filas 3, 8 y 13), total 7.57 frente a una suma de 9.57.
-Las figuras y regresiones publicadas usan 7.57; con 9.57 la Fig. 8A daría R² = 0.483.
+### Corrección aplicada
+
+C102, planta 3, control: la sacarosa es 2.64 mg g⁻¹ (confirmado por la autora). Los tres
+archivos de azúcares traen 4.64. La corrección se aplica al leer los datos
+(`SUGAR_CORRECTIONS` en `analysis/load.py`) y los archivos de `data/raw` quedan como se
+recibieron. Con ella el total de esa planta es 7.57, igual en las Figs. 5, 7 y 8.
+`outputs/tables/QC_total_sugar_vs_sum.csv` revisa que `Total Sugar` sea la suma de los cinco
+azúcares en `Data_frio_maca_ll.csv`; después de la corrección no queda ninguna fila distinta.
 
 ## Estructura
 

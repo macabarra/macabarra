@@ -17,6 +17,30 @@ from .config import RAW
 SUGARS = ["fructose", "glucose", "sucrose", "raffinose", "stachyose", "total"]
 
 
+# Correcciones confirmadas por la autora sobre los archivos de data/raw.
+# Los archivos crudos se mantienen tal como se recibieron; la corrección se
+# aplica al leerlos.
+# C102, planta 3, control: sacarosa 4.64 -> 2.64 mg g-1 (total 7.57, el valor
+# publicado en las Figs. 7A y 8A).
+SUGAR_CORRECTIONS = [
+    {"group": "L. luteus (C102)", "plant": 2, "sugar": "sucrose",
+     "old": 4.64, "new": 2.64},
+]
+
+
+def _apply_sugar_corrections(df: pd.DataFrame, total_col: str | None = "total",
+                             treatment: str | None = None) -> pd.DataFrame:
+    for c in SUGAR_CORRECTIONS:
+        m = (df["group"] == c["group"]) & (df["plant"] == c["plant"]) & \
+            np.isclose(df[c["sugar"]], c["old"])
+        if treatment is not None:
+            m &= df["treatment"] == treatment
+        df.loc[m, c["sugar"]] = c["new"]
+        if total_col is not None:
+            df.loc[m, total_col] = df.loc[m, SUGARS[:-1]].sum(axis=1).round(2)
+    return df
+
+
 def normalize_name(name: str) -> str:
     """'L.luteus(C98)', 'gL. luteus (C98)', 'V.faba', 'P. sativum ' -> forma canónica."""
     s = str(name).strip()
@@ -89,7 +113,7 @@ def load_sugars(level: str, treatment: str = "control") -> pd.DataFrame | None:
     df.columns = ["group"] + SUGARS
     for c in SUGARS:
         df[c] = pd.to_numeric(df[c].astype(str).str.replace(",", "."), errors="coerce")
-    return _finish(df)
+    return _apply_sugar_corrections(_finish(df))
 
 
 def load_sugars_treatments() -> pd.DataFrame | None:
@@ -118,6 +142,7 @@ def load_sugars_treatments() -> pd.DataFrame | None:
     df["group"] = (df["group"].map(normalize_name)
                    .str.replace("angustifolium", "angustifolius"))
     df["plant"] = df.groupby(["group", "treatment"]).cumcount()
+    df = _apply_sugar_corrections(df, treatment="control")
     return df.reset_index(drop=True)
 
 
@@ -141,10 +166,11 @@ def load_master() -> pd.DataFrame:
     for genus, abbr in LATIN.items():
         g = g.str.replace(rf"^{genus}\s+", f"{abbr} ", regex=True)
     df["group"] = g
-    df["sugar_sum"] = df[SUGARS[:-1]].sum(axis=1)
     df = df.drop(columns=["t0", "t1"])
     df["leaf"] = df.groupby("group").cumcount()
     df["plant"] = df["leaf"] % 5
+    df = _apply_sugar_corrections(df, total_col=None)
+    df["sugar_sum"] = df[SUGARS[:-1]].sum(axis=1)
     return df.reset_index(drop=True)
 
 

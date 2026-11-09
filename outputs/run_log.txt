@@ -58,12 +58,6 @@ LT50_Damage_species.csv L. angustifolius     LT50    15                        T
 LT50_Damage_species.csv       P. sativum     LT50    15                        True                      False                     False                True
 LT50_Damage_species.csv     L. mutabilis     LT50    15                        True                      False                     False                True
 
-  'Total Sugar' distinto de la suma de componentes (Data_frio_maca_ll.csv):
-           group leaf_id  total  sugar_sum  fructose  glucose  sucrose  raffinose  stachyose
-L. luteus (C102)       3   7.57       9.57      1.82     2.81     4.64       0.13       0.17
-L. luteus (C102)       8   7.57       9.57      1.82     2.81     4.64       0.13       0.17
-L. luteus (C102)      13   7.57       9.57      1.82     2.81     4.64       0.13       0.17
-
 Figuras
   FigS1_chamber_program.png, FigS1_chamber_program.tif
   FigS2_PSII_thresholds_INT.png, FigS2_PSII_thresholds_INT.tif
