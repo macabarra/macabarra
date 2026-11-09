@@ -1,0 +1,8 @@
+﻿model,subset,n,published_slope,published_intercept,published_R2,slope,intercept,R2,p,note
+recovery ~ LT50,all entries,0,-4.39,47.8,0.618,,,,,faltan datos de recuperación
+recovery ~ total sugars,L. luteus accessions,0,6.68,19.8,0.574,,,,,faltan datos de recuperación
+LT50 ~ total sugars,L. luteus accessions,60,-0.56,-0.9,0.433,-0.563,-0.84,0.483,7.439179810698794e-10,
+recovery ~ total sugars,four-species subset,0,2.69,26.0,0.649,,,,,faltan datos de recuperación
+LT50 ~ total sugars,four-species subset,60,-0.57,4.3,0.636,-0.566,4.34,0.636,2.4024211392559023e-14,
+recovery ~ total sugars,all entries,0,,,0.264,,,,,faltan datos de recuperación
+LT50 ~ total sugars,all entries,135,,,0.246,-0.22,-2.83,0.25,6.386907300175817e-10,

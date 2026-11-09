@@ -1,0 +1,71 @@
+Limpieza de datos
+  LT_INT_species.csv: L. luteus, fila 15: LT10 = LT90 = 0.0 -> LT10 y LT90 tratados como faltantes
+  LT_INT_accessions.csv: L. luteus (C226), fila 7: LT10 = LT90 = -7.6381 -> LT10 y LT90 tratados como faltantes
+
+Tabla S1
+                          FP (°C)        INT (°C)        LT10 (°C)        LT50 (°C)        LT90 (°C)      Damage (%)
+V. faba           -3.89 ± 0.12 ab  -5.12 ± 0.14 c   -3.20 ± 0.15 a  -10.74 ± 0.08 a  -18.00 ± 0.14 a  54.78 ± 5.48 b
+L. mutabilis       -1.68 ± 0.08 c  -5.09 ± 0.15 c    5.41 ± 0.44 c   -0.52 ± 0.02 d   -5.75 ± 0.18 d  97.72 ± 0.16 d
+L. albus          -3.44 ± 0.19 ab  -6.01 ± 0.16 b  -2.65 ± 0.26 ab   -6.76 ± 0.12 b  -12.14 ± 0.86 b  34.92 ± 2.05 a
+L. angustifolius   -4.20 ± 0.11 a  -5.78 ± 0.16 b  -1.50 ± 0.20 ab   -6.93 ± 0.25 b  -12.22 ± 0.48 b  82.02 ± 1.50 c
+P. sativum         -2.40 ± 0.04 c  -4.59 ± 0.10 c    4.03 ± 0.98 c   -4.89 ± 0.07 c  -13.70 ± 0.91 b  37.28 ± 2.75 a
+L. luteus          -3.44 ± 0.15 b  -8.83 ± 0.09 a   -1.43 ± 0.26 b   -5.01 ± 0.09 c   -9.06 ± 0.58 c  53.10 ± 1.31 b
+ANOVA F (P)         18.7 (<0.001)  124.9 (<0.001)    60.5 (<0.001)   712.6 (<0.001)    36.6 (<0.001)   82.0 (<0.001)
+
+                         FP (°C)         INT (°C)        LT10 (°C)       LT50 (°C)      LT90 (°C)       Damage (%)
+L. luteus (C102)  -4.74 ± 0.28 a  -10.21 ± 0.20 a   -2.97 ± 0.13 a  -6.21 ± 0.06 a   -9.31 ± 0.12    7.44 ± 0.76 a
+L. luteus (C98)   -2.41 ± 0.06 c   -8.15 ± 0.15 b  -2.27 ± 0.23 ab  -6.06 ± 0.20 a  -10.70 ± 0.91   16.31 ± 0.82 b
+L. luteus (C226)  -3.82 ± 0.22 b   -8.79 ± 0.21 b   -1.08 ± 0.46 b  -4.30 ± 0.12 b   -9.20 ± 0.83   92.39 ± 0.71 c
+L. luteus (C195)  -2.78 ± 0.15 c   -8.17 ± 0.26 b    0.89 ± 0.39 c  -3.45 ± 0.14 c   -7.91 ± 0.75   93.53 ± 0.23 c
+ANOVA F (P)        28.8 (<0.001)    21.8 (<0.001)    27.3 (<0.001)   94.5 (<0.001)    2.6 (0.066)  4915.1 (<0.001)
+
+PERMANOVA (LT50, INT)
+     level   pseudo_F       R2      p  n  groups  permutations
+   species 394.186076 0.959123 0.0001 90       6          9999
+accessions  44.391891 0.703979 0.0001 60       4          9999
+
+Regresiones
+                  model               subset   n  published_slope  published_intercept  published_R2  slope  intercept    R2            p                         note
+        recovery ~ LT50          all entries   0            -4.39                 47.8         0.618    NaN        NaN   NaN          NaN faltan datos de recuperación
+recovery ~ total sugars L. luteus accessions   0             6.68                 19.8         0.574    NaN        NaN   NaN          NaN faltan datos de recuperación
+    LT50 ~ total sugars L. luteus accessions  60            -0.56                 -0.9         0.433 -0.563      -0.84 0.483 7.439180e-10                          NaN
+recovery ~ total sugars  four-species subset   0             2.69                 26.0         0.649    NaN        NaN   NaN          NaN faltan datos de recuperación
+    LT50 ~ total sugars  four-species subset  60            -0.57                  4.3         0.636 -0.566       4.34 0.636 2.402421e-14                          NaN
+recovery ~ total sugars          all entries   0              NaN                  NaN         0.264    NaN        NaN   NaN          NaN faltan datos de recuperación
+    LT50 ~ total sugars          all entries 135              NaN                  NaN         0.246 -0.220      -2.83 0.250 6.386907e-10                          NaN
+
+Contrastes de azúcares (Welch)
+  omitidos: faltan los datos de azúcares tras la congelación
+
+Control de calidad
+                   file            group  columns  rows  rows_11_15_equal_rows_6_10  rows_11_15_equal_rows_1_5  rows_6_10_equal_rows_1_5  any_repeated_block
+                 FP.csv  L. luteus (C98)       FP    15                        True                      False                     False                True
+                 FP.csv L. luteus (C195)       FP    15                        True                      False                     False                True
+                 FP.csv L. luteus (C102)       FP    15                        True                      False                     False                True
+                 FP.csv L. luteus (C226)       FP    15                        True                      False                     False                True
+                 FP.csv         L. albus       FP    15                        True                      False                     False                True
+                 FP.csv L. angustifolius       FP    15                        True                      False                     False                True
+                 FP.csv       P. sativum       FP    15                        True                      False                     False                True
+                 FP.csv          V. faba       FP    15                        True                      False                     False                True
+     LT_INT_species.csv       P. sativum LT50+INT    15                        True                      False                     False                True
+     LT_INT_species.csv L. angustifolius LT50+INT    15                        True                      False                     False                True
+     LT_INT_species.csv          V. faba LT50+INT    15                        True                      False                     False                True
+  LT_INT_accessions.csv L. luteus (C195) LT50+INT    15                        True                      False                     False                True
+  LT_INT_accessions.csv L. luteus (C102) LT50+INT    15                        True                      False                     False                True
+  LT_INT_accessions.csv L. luteus (C226) LT50+INT    15                        True                      False                     False                True
+LT50_Damage_species.csv          V. faba     LT50    15                        True                      False                     False                True
+LT50_Damage_species.csv         L. albus     LT50    15                        True                      False                     False                True
+LT50_Damage_species.csv L. angustifolius     LT50    15                        True                      False                     False                True
+LT50_Damage_species.csv       P. sativum     LT50    15                        True                      False                     False                True
+LT50_Damage_species.csv     L. mutabilis     LT50    15                        True                      False                     False                True
+
+Figuras
+  FigS1_chamber_program.png, FigS1_chamber_program.tif
+  FigS2_PSII_thresholds_INT.png, FigS2_PSII_thresholds_INT.tif
+  Fig2_LT50_INT_species.png, Fig2_LT50_INT_species.tif
+  Fig3_LT50_INT_accessions.png, Fig3_LT50_INT_accessions.tif
+  Fig4BD_LT50_damage.png, Fig4BD_LT50_damage.tif
+  Fig. 5 omitida: faltan data/raw/sugar_freezing_species.csv y sugar_freezing_accessions.csv
+  Fig. 6 omitida: faltan data/raw/recovery_species.csv y recovery_accessions.csv
+  Fig. 7 omitida: faltan los archivos de recuperación
+  Fig8_sugars_LT50.png, Fig8_sugars_LT50.tif

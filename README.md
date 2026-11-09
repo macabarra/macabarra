@@ -1,0 +1,87 @@
+# Barra et al. — análisis y figuras en Python
+
+Código para reproducir los análisis, la Tabla S1 y las figuras del manuscrito
+"Intrinsic freezing resistance of grain legumes" (Barra, López, Reyes,
+Salvo-Garrido y Bravo; Frontiers) a partir de los datos crudos en `data/raw`.
+
+## Uso
+
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+python run_all.py
+```
+
+`python run_all.py --perm 999` acelera la PERMANOVA (por defecto 9999 permutaciones).
+La salida queda en `outputs/figures` (PNG y TIFF LZW a 300 dpi), `outputs/tables` (CSV) y
+`outputs/run_log.txt`.
+
+## Qué produce
+
+| Salida | Datos de entrada | Estado |
+|---|---|---|
+| Tabla S1 (media ± SE, ANOVA de una vía, letras de Tukey HSD) | `FP.csv`, `LT_INT_*.csv`, `LT50_Damage_*.csv` | coincide con la versión publicada en todas las celdas |
+| PERMANOVA sobre (LT50, INT), global y por pares (Bonferroni) | `LT_INT_*.csv` | completa |
+| Fig. S1, programa de la cámara | `Chamber_program.csv` | completa |
+| Fig. S2, LT10–LT90, LT50 e INT | `LT_INT_*.csv` | completa |
+| Fig. 2 y Fig. 3, LT50 frente a INT | `LT_INT_*.csv` | completa |
+| Fig. 4B y Fig. 4D, LT50 frente a daño | `LT50_Damage_*.csv` | completa (4A y 4C son fotos) |
+| Fig. 5, azúcares control frente a congelación (Welch) | `sugar_*.csv` + `sugar_freezing_*.csv` | falta `sugar_freezing_*.csv` |
+| Fig. 6, recuperación frente a LT50 | `recovery_*.csv` | faltan los datos de recuperación |
+| Fig. 7, azúcares frente a recuperación | `sugar_*.csv` + `recovery_*.csv` | faltan los datos de recuperación |
+| Fig. 8, azúcares frente a LT50 | `sugar_*.csv`, `LT50_Damage_species.csv`, `LT_INT_accessions.csv` | completa |
+| Regresiones (Tabla 1 del texto) | igual que Figs. 6–8 | solo las de LT50 |
+
+La Fig. 1 (imágenes de Fv/Fm del IMAGING-PAM) no se genera desde tablas.
+
+### Archivos que faltan
+
+Al agregarlos a `data/raw`, `run_all.py` genera las figuras pendientes sin cambiar el código.
+
+- `sugar_freezing_species.csv` y `sugar_freezing_accessions.csv`: mismo formato que
+  `sugar_species.csv` y `sugar_accessions.csv`, con los azúcares medidos 10 h después de la helada.
+- `recovery_species.csv` y `recovery_accessions.csv`: separador `;`, columnas
+  `grupo;Fv/Fm inicial;Fv/Fm final` (o `grupo;Recovery`), 15 filas por grupo en el mismo
+  orden que `LT50_Damage_species.csv` y `LT_INT_accessions.csv`.
+
+## Decisiones de análisis
+
+- Cada fila de un grupo es una hoja (`leaf` 1–15). Las tablas se emparejan por grupo y por
+  posición de la fila.
+- Azúcares y daño de especies se midieron por planta. Los archivos repiten cada planta en sus
+  tres hojas: las pruebas a nivel de planta (daño de especies en la Tabla S1, Welch de la
+  Fig. 5) usan las cinco primeras filas (n = 5).
+- FP de *L. luteus* (especie) es el conjunto de las cuatro accesiones (60 hojas), como indica la
+  Tabla S1.
+- Se tratan como faltantes LT10 y LT90 de dos filas: *L. luteus* fila 15 (LT10 = LT90 = 0) y
+  C226 fila 7 (LT10 = LT90 = −7.64). Con esa exclusión se reproducen los valores publicados.
+- LT50 de especies en Figs. 6–8 sale de `LT50_Damage_species.csv`, que es el archivo que
+  reproduce la Fig. 8B publicada (y = −0.57x + 4.3; R² = 0.636). En la Tabla S1 y en las
+  Figs. 2 y S2 la LT50 sale de `LT_INT_species.csv`. Ambos archivos difieren para *L. albus*
+  (−6.43 frente a −6.76 °C) y, en menor medida, para *L. mutabilis* y *L. luteus*.
+- Elipses: dos desviaciones estándar de la matriz de covarianza de cada grupo.
+- PERMANOVA: distancia euclidiana sobre LT50 e INT sin estandarizar (ambas en °C).
+- Las líneas discontinuas de la Fig. 4 son referencias visuales como en la figura original,
+  no ajustes. `figures.fig4(reference_lines=False)` las quita.
+
+## Control de calidad
+
+`outputs/tables/QC_repeated_blocks.csv` marca los grupos donde las filas 11–15 repiten
+exactamente las filas 6–10. Ocurre en `FP.csv` (los 9 grupos), en `LT_INT_species.csv`
+(*P. sativum*, *L. angustifolius*, *V. faba*), en `LT_INT_accessions.csv` (C102, C195, C226) y
+en la LT50 de `LT50_Damage_species.csv`. La Tabla S1 publicada usa las 15 filas, así que el
+código las mantiene, pero en esos grupos hay 10 valores distintos, no 15.
+
+## Estructura
+
+```
+analysis/config.py    rutas, orden de grupos, colores y marcadores
+analysis/load.py      lectura y limpieza de data/raw
+analysis/stats.py     ANOVA, Tukey + letras, Welch, OLS, PERMANOVA
+analysis/plotting.py  estilo, elipses, guardado
+analysis/tables.py    Tabla S1, PERMANOVA, regresiones, control de calidad
+analysis/figures.py   Figs. S1, S2 y 2–8
+run_all.py            ejecuta todo
+```

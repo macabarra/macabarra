@@ -1,0 +1,30 @@
+﻿file,group,columns,rows,rows_11_15_equal_rows_6_10,rows_11_15_equal_rows_1_5,rows_6_10_equal_rows_1_5,any_repeated_block
+FP.csv,L. luteus (C98),FP,15,True,False,False,True
+FP.csv,L. luteus (C195),FP,15,True,False,False,True
+FP.csv,L. luteus (C102),FP,15,True,False,False,True
+FP.csv,L. luteus (C226),FP,15,True,False,False,True
+FP.csv,L. albus,FP,15,True,False,False,True
+FP.csv,L. angustifolius,FP,15,True,False,False,True
+FP.csv,P. sativum,FP,15,True,False,False,True
+FP.csv,V. faba,FP,15,True,False,False,True
+FP.csv,L. mutabilis,FP,15,False,False,False,False
+LT_INT_species.csv,L. mutabilis,LT50+INT,15,False,False,False,False
+LT_INT_species.csv,P. sativum,LT50+INT,15,True,False,False,True
+LT_INT_species.csv,L. luteus,LT50+INT,15,False,False,False,False
+LT_INT_species.csv,L. albus,LT50+INT,15,False,False,False,False
+LT_INT_species.csv,L. angustifolius,LT50+INT,15,True,False,False,True
+LT_INT_species.csv,V. faba,LT50+INT,15,True,False,False,True
+LT_INT_accessions.csv,L. luteus (C98),LT50+INT,15,False,False,False,False
+LT_INT_accessions.csv,L. luteus (C195),LT50+INT,15,True,False,False,True
+LT_INT_accessions.csv,L. luteus (C102),LT50+INT,15,True,False,False,True
+LT_INT_accessions.csv,L. luteus (C226),LT50+INT,15,True,False,False,True
+LT50_Damage_species.csv,V. faba,LT50,15,True,False,False,True
+LT50_Damage_species.csv,L. albus,LT50,15,True,False,False,True
+LT50_Damage_species.csv,L. angustifolius,LT50,15,True,False,False,True
+LT50_Damage_species.csv,P. sativum,LT50,15,True,False,False,True
+LT50_Damage_species.csv,L. mutabilis,LT50,15,True,False,False,True
+LT50_Damage_species.csv,L. luteus,LT50,15,False,False,False,False
+LT50_Damage_accessions.csv,L. luteus (C195),damage,15,False,False,False,False
+LT50_Damage_accessions.csv,L. luteus (C102),damage,15,False,False,False,False
+LT50_Damage_accessions.csv,L. luteus (C98),damage,15,False,False,False,False
+LT50_Damage_accessions.csv,L. luteus (C226),damage,15,False,False,False,False

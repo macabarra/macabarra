@@ -1,0 +1,31 @@
+﻿group,variable,n,mean,se,letters,published_mean,published_se,matches
+L. luteus (C102),FP,15.0,-4.74,0.28,a,-4.74,0.28,True
+L. luteus (C98),FP,15.0,-2.41,0.06,c,-2.41,0.06,True
+L. luteus (C226),FP,15.0,-3.82,0.22,b,-3.82,0.22,True
+L. luteus (C195),FP,15.0,-2.78,0.15,c,-2.78,0.15,True
+ANOVA F,FP,,28.8,2.1931583381611092e-11,,28.8,,True
+L. luteus (C102),INT,15.0,-10.21,0.2,a,-10.21,0.2,True
+L. luteus (C98),INT,15.0,-8.15,0.15,b,-8.15,0.15,True
+L. luteus (C226),INT,15.0,-8.79,0.21,b,-8.79,0.21,True
+L. luteus (C195),INT,15.0,-8.17,0.26,b,-8.17,0.26,True
+ANOVA F,INT,,21.8,1.7530717533116105e-09,,21.8,,True
+L. luteus (C102),LT10,14.0,-2.97,0.13,a,-2.97,0.13,True
+L. luteus (C98),LT10,13.0,-2.27,0.23,ab,-2.27,0.23,True
+L. luteus (C226),LT10,13.0,-1.08,0.46,b,-1.08,0.46,True
+L. luteus (C195),LT10,14.0,0.89,0.39,c,0.89,0.39,True
+ANOVA F,LT10,,27.3,1.318175936861758e-10,,27.3,,True
+L. luteus (C102),LT50,15.0,-6.21,0.06,a,-6.21,0.06,True
+L. luteus (C98),LT50,15.0,-6.06,0.2,a,-6.06,0.2,True
+L. luteus (C226),LT50,15.0,-4.3,0.12,b,-4.3,0.12,True
+L. luteus (C195),LT50,15.0,-3.45,0.14,c,-3.45,0.14,True
+ANOVA F,LT50,,94.5,6.692097848963336e-22,,94.5,,True
+L. luteus (C102),LT90,14.0,-9.31,0.12,,-9.31,0.12,True
+L. luteus (C98),LT90,13.0,-10.7,0.91,,-10.7,0.91,True
+L. luteus (C226),LT90,13.0,-9.2,0.83,,-9.2,0.83,True
+L. luteus (C195),LT90,14.0,-7.91,0.75,,-7.91,0.75,True
+ANOVA F,LT90,,2.6,0.06595104244024011,,2.6,,True
+L. luteus (C102),damage,15.0,7.44,0.76,a,7.44,0.76,True
+L. luteus (C98),damage,15.0,16.31,0.82,b,16.31,0.82,True
+L. luteus (C226),damage,15.0,92.39,0.71,c,92.39,0.71,True
+L. luteus (C195),damage,15.0,93.53,0.23,c,93.53,0.23,True
+ANOVA F,damage,,4915.1,9.15722627793779e-68,,4915.0,,True
