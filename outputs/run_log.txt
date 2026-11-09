@@ -25,14 +25,14 @@ PERMANOVA (LT50, INT)
 accessions  44.391891 0.703979 0.0001 60       4          9999
 
 Regresiones
-                  model               subset   n  published_slope  published_intercept  published_R2  slope  intercept    R2            p                         note
-        recovery ~ LT50          all entries   0            -4.39                 47.8         0.618    NaN        NaN   NaN          NaN faltan datos de recuperación
-recovery ~ total sugars L. luteus accessions   0             6.68                 19.8         0.574    NaN        NaN   NaN          NaN faltan datos de recuperación
-    LT50 ~ total sugars L. luteus accessions  60            -0.56                 -0.9         0.433 -0.563      -0.84 0.483 7.439180e-10                          NaN
-recovery ~ total sugars  four-species subset   0             2.69                 26.0         0.649    NaN        NaN   NaN          NaN faltan datos de recuperación
-    LT50 ~ total sugars  four-species subset  60            -0.57                  4.3         0.636 -0.566       4.34 0.636 2.402421e-14                          NaN
-recovery ~ total sugars          all entries   0              NaN                  NaN         0.264    NaN        NaN   NaN          NaN faltan datos de recuperación
-    LT50 ~ total sugars          all entries 135              NaN                  NaN         0.246 -0.220      -2.83 0.250 6.386907e-10                          NaN
+                  model               subset   n  published_slope  published_intercept  published_R2  slope  intercept    R2            p
+        recovery ~ LT50          all entries 135            -4.39                 47.8         0.618 -4.393      47.76 0.618 1.456658e-29
+recovery ~ total sugars L. luteus accessions  60             6.68                 19.8         0.574  6.682      19.82 0.574 2.515924e-12
+    LT50 ~ total sugars L. luteus accessions  60            -0.56                 -0.9         0.433 -0.562      -0.91 0.433 1.108337e-08
+recovery ~ total sugars  four-species subset  60             2.69                 26.0         0.649  2.692      26.02 0.649 8.217916e-15
+    LT50 ~ total sugars  four-species subset  60            -0.57                  4.3         0.636 -0.566       4.34 0.636 2.402421e-14
+recovery ~ total sugars          all entries 135              NaN                  NaN         0.264  1.258      56.74 0.264 1.886900e-10
+    LT50 ~ total sugars          all entries 135              NaN                  NaN         0.246 -0.217      -2.87 0.246 9.584448e-10
 
 Contrastes de azúcares (Welch)
 
@@ -58,6 +58,12 @@ LT50_Damage_species.csv L. angustifolius     LT50    15                        T
 LT50_Damage_species.csv       P. sativum     LT50    15                        True                      False                     False                True
 LT50_Damage_species.csv     L. mutabilis     LT50    15                        True                      False                     False                True
 
+  'Total Sugar' distinto de la suma de componentes (Data_frio_maca_ll.csv):
+           group leaf_id  total  sugar_sum  fructose  glucose  sucrose  raffinose  stachyose
+L. luteus (C102)       3   7.57       9.57      1.82     2.81     4.64       0.13       0.17
+L. luteus (C102)       8   7.57       9.57      1.82     2.81     4.64       0.13       0.17
+L. luteus (C102)      13   7.57       9.57      1.82     2.81     4.64       0.13       0.17
+
 Figuras
   FigS1_chamber_program.png, FigS1_chamber_program.tif
   FigS2_PSII_thresholds_INT.png, FigS2_PSII_thresholds_INT.tif
@@ -65,6 +71,6 @@ Figuras
   Fig3_LT50_INT_accessions.png, Fig3_LT50_INT_accessions.tif
   Fig4BD_LT50_damage.png, Fig4BD_LT50_damage.tif
   Fig5_soluble_sugars.png, Fig5_soluble_sugars.tif
-  Fig. 6 omitida: faltan data/raw/recovery_species.csv y recovery_accessions.csv
-  Fig. 7 omitida: faltan los archivos de recuperación
+  Fig6_recovery_LT50.png, Fig6_recovery_LT50.tif
+  Fig7_sugars_recovery.png, Fig7_sugars_recovery.tif
   Fig8_sugars_LT50.png, Fig8_sugars_LT50.tif

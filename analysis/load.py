@@ -121,24 +121,31 @@ def load_sugars_treatments() -> pd.DataFrame | None:
     return df.reset_index(drop=True)
 
 
-def load_recovery(level: str) -> pd.DataFrame | None:
-    """Recuperación fotoquímica por hoja: recovery_{level}.csv.
+LATIN = {"Lupinus": "L.", "Pisum": "P.", "Vicia": "V."}
 
-    Formato esperado (separador ';'): group;Fv/Fm initial;Fv/Fm final
-    o bien group;Recovery. Las filas deben seguir el mismo orden que
-    LT_INT_accessions.csv / LT50_Damage_species.csv. Devuelve None si falta.
+
+def load_master() -> pd.DataFrame:
+    """Data_frio_maca_ll.csv: una fila por hoja con Fv/Fm antes y después de la
+    helada, % de recuperación, azúcares de la planta (antes de la helada) y LT50.
+
+    Es la fuente de las Figs. 6, 7 y 8 y de las regresiones.
     """
-    path = RAW / f"recovery_{level}.csv"
-    if not path.exists():
-        return None
-    df = pd.read_csv(path, sep=None, engine="python", decimal=",")
-    cols = [c.strip() for c in df.columns]
-    df.columns = ["group"] + cols[1:]
-    if len(cols) >= 3:
-        df["recovery"] = 100 * df.iloc[:, 2].astype(float) / df.iloc[:, 1].astype(float)
-    else:
-        df["recovery"] = df.iloc[:, 1].astype(float)
-    return _finish(df[["group", "recovery"]])
+    df = pd.read_csv(RAW / "Data_frio_maca_ll.csv", sep=";", encoding="utf-8-sig",
+                     dtype=str)
+    df.columns = ["group", "leaf_id", "t0", "fvfm_before", "t1", "fvfm_after",
+                  "recovery", "total", "LT50"] + SUGARS[:-1]
+    for c in ["fvfm_before", "fvfm_after", "recovery", "total", "LT50"] + SUGARS[:-1]:
+        df[c] = df[c].str.replace(",", ".").astype(float)
+    g = df["group"].str.replace(" ", " ").str.strip()
+    g = g.str.replace(r"\s+L$", "", regex=True)          # 'Lupinus albus L' -> 'Lupinus albus'
+    for genus, abbr in LATIN.items():
+        g = g.str.replace(rf"^{genus}\s+", f"{abbr} ", regex=True)
+    df["group"] = g
+    df["sugar_sum"] = df[SUGARS[:-1]].sum(axis=1)
+    df = df.drop(columns=["t0", "t1"])
+    df["leaf"] = df.groupby("group").cumcount()
+    df["plant"] = df["leaf"] % 5
+    return df.reset_index(drop=True)
 
 
 def load_chamber() -> pd.DataFrame:

@@ -158,6 +158,15 @@ def quality_report() -> pd.DataFrame:
     return out
 
 
+def sugar_total_check() -> pd.DataFrame:
+    """Filas de Data_frio_maca_ll.csv donde 'Total Sugar' no es la suma de los
+    cinco azúcares de la misma fila."""
+    m = load.load_master()
+    bad = m[(m["total"] - m["sugar_sum"]).abs() > 0.02]
+    return bad[["group", "leaf_id", "total", "sugar_sum"] + ["fructose", "glucose",
+               "sucrose", "raffinose", "stachyose"]]
+
+
 def save_table(df: pd.DataFrame, name: str, index=False):
     TAB_DIR.mkdir(parents=True, exist_ok=True)
     p = TAB_DIR / f"{name}.csv"

@@ -62,6 +62,12 @@ def main():
     tables.save_table(qc, "QC_repeated_blocks")
     print(qc[qc.any_repeated_block].to_string(index=False))
 
+    st = tables.sugar_total_check()
+    tables.save_table(st, "QC_total_sugar_vs_sum")
+    if len(st):
+        print("\n  'Total Sugar' distinto de la suma de componentes (Data_frio_maca_ll.csv):")
+        print(st.to_string(index=False))
+
     print("\nFiguras")
     for fn in (figures.supp_fig1, figures.supp_fig2, figures.fig2, figures.fig3,
                figures.fig4, figures.fig5):

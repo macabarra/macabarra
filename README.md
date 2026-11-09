@@ -29,21 +29,12 @@ La salida queda en `outputs/figures` (PNG y TIFF LZW a 300 dpi), `outputs/tables
 | Fig. 2 y Fig. 3, LT50 frente a INT | `LT_INT_*.csv` | completa |
 | Fig. 4B y Fig. 4D, LT50 frente a daño | `LT50_Damage_*.csv` | completa (4A y 4C son fotos) |
 | Fig. 5, azúcares control frente a congelación (Welch, n = 5 plantas) | `sugars_control_freezing.tsv` (columnas `A…`) | completa; los asteriscos coinciden con la figura publicada en las 54 comparaciones |
-| Fig. 6, recuperación frente a LT50 | `recovery_*.csv` | faltan los datos de recuperación |
-| Fig. 7, azúcares frente a recuperación | `sugar_*.csv` + `recovery_*.csv` | faltan los datos de recuperación |
-| Fig. 8, azúcares frente a LT50 | `sugar_*.csv`, `LT50_Damage_species.csv`, `LT_INT_accessions.csv` | completa |
-| Regresiones (Tabla 1 del texto) | igual que Figs. 6–8 | solo las de LT50 |
+| Fig. 6, recuperación frente a LT50 | `Data_frio_maca_ll.csv` | completa |
+| Fig. 7, azúcares frente a recuperación | `Data_frio_maca_ll.csv` | completa |
+| Fig. 8, azúcares frente a LT50 | `Data_frio_maca_ll.csv` | completa |
+| Regresiones (Tabla 1 del texto) | `Data_frio_maca_ll.csv` | las siete coinciden con lo publicado (pendiente, intercepto, R²) |
 
 La Fig. 1 (imágenes de Fv/Fm del IMAGING-PAM) no se genera desde tablas.
-
-### Archivos que faltan
-
-Al agregarlos a `data/raw`, `run_all.py` genera las figuras pendientes sin cambiar el código.
-`sugars_control_freezing.tsv` no trae recuperación; las columnas `N…` no se usan.
-
-- `recovery_species.csv` y `recovery_accessions.csv`: separador `;`, columnas
-  `grupo;Fv/Fm inicial;Fv/Fm final` (o `grupo;Recovery`), 15 filas por grupo en el mismo
-  orden que `LT50_Damage_species.csv` y `LT_INT_accessions.csv`.
 
 ## Decisiones de análisis
 
@@ -56,8 +47,9 @@ Al agregarlos a `data/raw`, `run_all.py` genera las figuras pendientes sin cambi
   Tabla S1.
 - Se tratan como faltantes LT10 y LT90 de dos filas: *L. luteus* fila 15 (LT10 = LT90 = 0) y
   C226 fila 7 (LT10 = LT90 = −7.64). Con esa exclusión se reproducen los valores publicados.
-- LT50 de especies en Figs. 6–8 sale de `LT50_Damage_species.csv`, que es el archivo que
-  reproduce la Fig. 8B publicada (y = −0.57x + 4.3; R² = 0.636). En la Tabla S1 y en las
+- Figs. 6–8 y regresiones usan `Data_frio_maca_ll.csv` (una fila por hoja: Fv/Fm antes y
+  después, % de recuperación, azúcares antes de la helada y LT50). Su LT50 de especies es la
+  de `LT50_Damage_species.csv`. En la Tabla S1 y en las
   Figs. 2 y S2 la LT50 sale de `LT_INT_species.csv`. Ambos archivos difieren para *L. albus*
   (−6.43 frente a −6.76 °C) y, en menor medida, para *L. mutabilis* y *L. luteus*.
 - Elipses: dos desviaciones estándar de la matriz de covarianza de cada grupo.
@@ -72,6 +64,10 @@ exactamente las filas 6–10. Ocurre en `FP.csv` (los 9 grupos), en `LT_INT_spec
 (*P. sativum*, *L. angustifolius*, *V. faba*), en `LT_INT_accessions.csv` (C102, C195, C226) y
 en la LT50 de `LT50_Damage_species.csv`. La Tabla S1 publicada usa las 15 filas, así que el
 código las mantiene, pero en esos grupos hay 10 valores distintos, no 15.
+
+`outputs/tables/QC_total_sugar_vs_sum.csv` lista las filas donde `Total Sugar` no es la suma
+de los cinco azúcares: C102, planta 3 (filas 3, 8 y 13), total 7.57 frente a una suma de 9.57.
+Las figuras y regresiones publicadas usan 7.57; con 9.57 la Fig. 8A daría R² = 0.483.
 
 ## Estructura
 

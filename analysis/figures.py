@@ -247,25 +247,10 @@ def fig5():
 # Figuras 6-8. Regresiones
 # ---------------------------------------------------------------------------
 def regression_frame() -> pd.DataFrame:
-    """Una fila por hoja con LT50, azúcares totales (antes de la helada) y
-    recuperación (si existe), para las 9 entradas.
-
-    LT50 de especies: LT50_Damage_species.csv (es la columna que reproduce la
-    Fig. 8B: y = −0.57x + 4.3, R² = 0.636). LT50 de accesiones:
-    LT_INT_accessions.csv. Las filas se emparejan por grupo y orden.
+    """Una fila por hoja (9 entradas × 15 hojas) con LT50, azúcares totales
+    antes de la helada y % de recuperación, tomada de Data_frio_maca_ll.csv.
     """
-    sp = load.load_damage("species")[["group", "leaf", "LT50"]]
-    ac, _ = load.load_lt_int("accessions")
-    lt = pd.concat([sp, ac[["group", "leaf", "LT50"]]])
-    sug = pd.concat([load.load_sugars("species"), load.load_sugars("accessions")])
-    df = lt.merge(sug[["group", "leaf", "total"]], on=["group", "leaf"], how="left")
-    rec = [load.load_recovery(l) for l in ("species", "accessions")]
-    rec = [r for r in rec if r is not None]
-    if rec:
-        df = df.merge(pd.concat(rec), on=["group", "leaf"], how="left")
-    else:
-        df["recovery"] = np.nan
-    return df
+    return load.load_master()
 
 
 def _reg_panel(ax, df, xcol, ycol, groups, title, invert_y=False):
@@ -285,9 +270,6 @@ def _reg_panel(ax, df, xcol, ycol, groups, title, invert_y=False):
 
 def fig6(df=None):
     df = regression_frame() if df is None else df
-    if df["recovery"].isna().all():
-        print("  Fig. 6 omitida: faltan data/raw/recovery_species.csv y recovery_accessions.csv")
-        return None
     fig, ax = plt.subplots(figsize=(10, 6.3))
     groups = ["V. faba", "L. albus", "L. angustifolius", "P. sativum", "L. mutabilis",
               "L. luteus (C98)", "L. luteus (C102)", "L. luteus (C226)", "L. luteus (C195)"]
@@ -312,9 +294,6 @@ def _sugar_fig(df, ycol, ylabel, name, invert_y):
 
 def fig7(df=None):
     df = regression_frame() if df is None else df
-    if df["recovery"].isna().all():
-        print("  Fig. 7 omitida: faltan los archivos de recuperación")
-        return None
     return _sugar_fig(df, "recovery", "Fv/Fm Recovery (%)", "Fig7_sugars_recovery", False)
 
 
