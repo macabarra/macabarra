@@ -10,7 +10,7 @@ import argparse
 
 import pandas as pd
 
-from analysis import figures, load, tables
+from analysis import figures, load, reports, tables
 from analysis.plotting import apply_style
 
 
@@ -78,6 +78,11 @@ def main():
         out = fn(reg)
         if out:
             print("  " + ", ".join(p.name for p in out))
+
+
+    print("\nDocumentación (.md) y datos usados (.txt)")
+    reports.build_all(args.perm)
+    print("  outputs/docs/figures, outputs/docs/analyses, outputs/data_txt")
 
 
 if __name__ == "__main__":

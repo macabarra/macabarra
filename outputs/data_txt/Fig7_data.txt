@@ -1,0 +1,124 @@
+# Una fila por hoja. Fuente: Data_frio_maca_ll.csv.
+# recovery = 100 × Fv/Fm después / Fv/Fm antes (10 h a 15 °C en oscuridad).
+# total = azúcares solubles totales antes de la helada (mg g-1), valor de la planta.
+group	leaf_id	plant	total	recovery
+L. albus	1	0	15.6	82.0509
+L. albus	2	1	14.39	84.3728
+L. albus	3	2	14.88	81.91
+L. albus	4	3	14.92	82.4205
+L. albus	5	4	14.91	82.0508
+L. albus	6	0	15.6	82.9999
+L. albus	7	1	14.39	84.2481
+L. albus	8	2	14.88	81.91
+L. albus	9	3	14.92	82.5399
+L. albus	10	4	14.91	82.8811
+L. albus	11	0	15.6	82.8813
+L. albus	12	1	14.39	83.8741
+L. albus	13	2	14.88	81.91
+L. albus	14	3	14.92	82.4205
+L. albus	15	4	14.91	82.6439
+L. luteus (C102)	1	0	7.56	60.9345
+L. luteus (C102)	2	1	7.56	63.3964
+L. luteus (C102)	3	2	7.57	66.415
+L. luteus (C102)	4	3	7.86	64.0441
+L. luteus (C102)	5	4	6.89	72.3899
+L. luteus (C102)	6	0	7.56	61.174
+L. luteus (C102)	7	1	7.56	63.9917
+L. luteus (C102)	8	2	7.57	66.2961
+L. luteus (C102)	9	3	7.86	63.3332
+L. luteus (C102)	10	4	6.89	64.4235
+L. luteus (C102)	11	0	7.56	61.2938
+L. luteus (C102)	12	1	7.56	69.5929
+L. luteus (C102)	13	2	7.57	66.2961
+L. luteus (C102)	14	3	7.86	63.9256
+L. luteus (C102)	15	4	6.89	64.3082
+L. luteus (C195)	1	0	4.85	60.2057
+L. luteus (C195)	2	1	4.85	52.9648
+L. luteus (C195)	3	2	5.42	54.5988
+L. luteus (C195)	4	3	5.1	54.031
+L. luteus (C195)	5	4	4.84	61.4016
+L. luteus (C195)	6	0	4.85	60.2057
+L. luteus (C195)	7	1	4.85	53.3289
+L. luteus (C195)	8	2	5.42	54.3564
+L. luteus (C195)	9	3	5.1	53.6638
+L. luteus (C195)	10	4	4.84	60.5479
+L. luteus (C195)	11	0	4.85	59.9612
+L. luteus (C195)	12	1	4.85	52.9648
+L. luteus (C195)	13	2	5.42	53.6291
+L. luteus (C195)	14	3	5.1	54.031
+L. luteus (C195)	15	4	4.84	61.0357
+L. luteus (C226)	1	0	7.57	62.4272
+L. luteus (C226)	2	1	7.52	61.5444
+L. luteus (C226)	3	2	8.12	60.9297
+L. luteus (C226)	4	3	8.13	63.5214
+L. luteus (C226)	5	4	7.39	65.0454
+L. luteus (C226)	6	0	7.57	62.5467
+L. luteus (C226)	7	1	7.52	61.9032
+L. luteus (C226)	8	2	8.12	61.4128
+L. luteus (C226)	9	3	8.13	63.156
+L. luteus (C226)	10	4	7.39	64.5522
+L. luteus (C226)	11	0	7.57	62.4272
+L. luteus (C226)	12	1	7.52	62.0228
+L. luteus (C226)	13	2	8.12	60.6882
+L. luteus (C226)	14	3	8.13	62.9124
+L. luteus (C226)	15	4	7.39	64.5522
+L. luteus (C98)	1	0	7.79	85.2208
+L. luteus (C98)	2	1	8.98	95.1125
+L. luteus (C98)	3	2	10.07	89.6698
+L. luteus (C98)	4	3	8.15	85.8843
+L. luteus (C98)	5	4	9.51	94.2811
+L. luteus (C98)	6	0	7.79	85.3397
+L. luteus (C98)	7	1	8.98	95.1125
+L. luteus (C98)	8	2	10.07	90.2686
+L. luteus (C98)	9	3	8.15	86.476
+L. luteus (C98)	10	4	9.51	94.0439
+L. luteus (C98)	11	0	7.79	85.3397
+L. luteus (C98)	12	1	8.98	95.7056
+L. luteus (C98)	13	2	10.07	89.3105
+L. luteus (C98)	14	3	8.15	86.1209
+L. luteus (C98)	15	4	9.51	94.1625
+L. mutabilis	1	0	10.82	45.8934
+L. mutabilis	2	1	9.51	39.8937
+L. mutabilis	3	2	11.19	45.4335
+L. mutabilis	4	3	11.06	48.8051
+L. mutabilis	5	4	10.08	40.4902
+L. mutabilis	6	0	10.82	45.2917
+L. mutabilis	7	1	9.51	39.5314
+L. mutabilis	8	2	11.19	45.194
+L. mutabilis	9	3	11.06	48.9234
+L. mutabilis	10	4	10.08	39.7784
+L. mutabilis	11	0	10.82	46.1341
+L. mutabilis	12	1	9.51	39.1691
+L. mutabilis	13	2	11.19	44.8347
+L. mutabilis	14	3	11.06	48.5684
+L. mutabilis	15	4	10.08	39.7784
+P. sativum	1	0	21.47	78.9477
+P. sativum	2	1	19.82	73.674
+P. sativum	3	2	21.1	80.1527
+P. sativum	4	3	24.03	82.9043
+P. sativum	5	4	20.26	78.013
+P. sativum	6	0	21.47	78.4563
+P. sativum	7	1	19.82	74.0389
+P. sativum	8	2	21.1	80.8818
+P. sativum	9	3	24.03	83.2724
+P. sativum	10	4	20.26	77.5386
+P. sativum	11	0	21.47	78.702
+P. sativum	12	1	19.82	73.9173
+P. sativum	13	2	21.1	80.5173
+P. sativum	14	3	24.03	82.7816
+P. sativum	15	4	20.26	77.6572
+V. faba	1	0	22.03	86.422
+V. faba	2	1	23.17	89.92
+V. faba	3	2	25.45	86.8091
+V. faba	4	3	23.23	89.1531
+V. faba	5	4	23.76	87.4406
+V. faba	6	0	22.03	86.422
+V. faba	7	1	23.17	90.4042
+V. faba	8	2	25.45	86.4437
+V. faba	9	3	23.23	90.0036
+V. faba	10	4	23.76	87.909
+V. faba	11	0	22.03	86.5429
+V. faba	12	1	23.17	89.7989
+V. faba	13	2	25.45	86.4437
+V. faba	14	3	23.23	89.3961
+V. faba	15	4	23.76	87.6748

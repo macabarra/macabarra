@@ -1,0 +1,93 @@
+# Azúcares de hoja por planta, control y congelación (sugars_control_freezing.tsv, columnas A*).
+# Corrección: C102 planta 3 control, sacarosa 2.64.
+group	treatment	plant	fructose	raffinose	glucose	sucrose	stachyose	total
+V. faba	control	0	2.76	0.35	2.38	16.35	0.19	22.03
+V. faba	control	1	2.56	0.31	3.49	16.63	0.18	23.17
+V. faba	control	2	3.05	0.43	3.22	18.56	0.19	25.45
+V. faba	control	3	2.56	0.39	3.49	16.63	0.16	23.23
+V. faba	control	4	3.09	0.34	2.89	17.25	0.19	23.76
+V. faba	freezing	0	2.43	0.11	1.75	8.15	0.18	12.62
+V. faba	freezing	1	2.43	0.04	1.689	9.04	0.19	13.389
+V. faba	freezing	2	2.18	0.03	1.11	8.68	0.16	12.16
+V. faba	freezing	3	2.61	0.05	1.35	9.19	0.19	13.39
+V. faba	freezing	4	2.18	0.03	1.03	11.9	0.14	15.28
+L. albus	control	0	4.5	0.7	4.54	5.48	0.38	15.6
+L. albus	control	1	3.27	0.8	4.63	5.5	0.19	14.39
+L. albus	control	2	4.07	0.56	5.7	4.36	0.19	14.88
+L. albus	control	3	3.5	0.53	5.75	4.93	0.21	14.92
+L. albus	control	4	4.5	0.5	5.39	4.33	0.19	14.91
+L. albus	freezing	0	2.12	0.2	3.37	2.5	0.21	8.4
+L. albus	freezing	1	2.4	0.46	3.94	2.6	0.19	9.59
+L. albus	freezing	2	2	0.5	3.64	3.26	0.18	9.58
+L. albus	freezing	3	2.81	0.34	3.69	2.84	0.15	9.83
+L. albus	freezing	4	2.31	0.3	3.51	3.24	0	9.36
+L. angustifolius	freezing	0	1.83	0.05	1.81	5.81	0.17	9.67
+L. angustifolius	freezing	1	2.4	0.04	2.54	4.41	0.19	9.58
+L. angustifolius	freezing	2	2.4	0.04	3.54	5.41	0.15	11.54
+L. angustifolius	freezing	3	2.65	0.02	2.74	5.58	0.19	11.18
+L. angustifolius	freezing	4	2.65	0.05	3.47	4.62	0	10.79
+L. angustifolius	control	0	1.83	0.16	3.27	3.77	0.21	9.24
+L. angustifolius	control	1	2.83	0.08	3.2	2.97	0.18	9.26
+L. angustifolius	control	2	2.18	0.21	3.65	3.03	0.19	9.26
+L. angustifolius	control	3	2.24	0.4	3.19	3	0.15	8.98
+L. angustifolius	control	4	2.13	0.27	2.41	2.41	0.19	7.41
+P. sativum	control	0	0.28	0.7	4.11	16.38	0	21.47
+P. sativum	control	1	0.54	0.87	4.73	13.68	0	19.82
+P. sativum	control	2	0.93	0.78	4.46	14.93	0	21.1
+P. sativum	control	3	0.66	0.82	6.72	15.83	0	24.03
+P. sativum	control	4	0.86	0.71	4.53	14.16	0	20.26
+P. sativum	freezing	0	2.91	0.08	3.41	3.47	0.21	10.08
+P. sativum	freezing	1	2.38	0.06	5.38	2.18	0.19	10.19
+P. sativum	freezing	2	2.94	0.6	3.99	4.96	0.19	12.68
+P. sativum	freezing	3	2.97	0.6	3.38	5.31	0.48	12.74
+P. sativum	freezing	4	2.55	0.12	3.41	5.12	0.38	11.58
+L. mutabilis	freezing	0	2.12	0.16	2.89	2.86	0	8.03
+L. mutabilis	freezing	1	1.12	0.15	2.58	2.6	0	6.45
+L. mutabilis	freezing	2	2.12	0.131	1.58	2.86	0	6.691
+L. mutabilis	freezing	3	1.28	0.16	2.09	2.01	0	5.54
+L. mutabilis	freezing	4	1.43	0.12	2.28	2.23	0	6.06
+L. mutabilis	control	0	1.29	0.5	4.85	4.18	0	10.82
+L. mutabilis	control	1	1.27	0.45	4.6	3.19	0	9.51
+L. mutabilis	control	2	1.39	0.51	4.63	4.66	0	11.19
+L. mutabilis	control	3	1.274	0.29	5.07	4.43	0	11.064
+L. mutabilis	control	4	1.26	0.49	4.8	3.53	0	10.08
+L. luteus (C102)	control	0	1.41	0.13	2.26	3.57	0.19	7.56
+L. luteus (C102)	control	1	1.67	0.12	2.43	3.15	0.19	7.56
+L. luteus (C102)	control	2	1.82	0.13	2.81	2.64	0.17	7.57
+L. luteus (C102)	control	3	1.67	0.15	2.25	3.6	0.19	7.86
+L. luteus (C102)	control	4	0.67	0.15	1.8	4.06	0.21	6.89
+L. luteus (C102)	freezing	0	1.65	0.17	1.71	3.96	0.16	7.65
+L. luteus (C102)	freezing	1	1.63	0.27	1.99	2.21	0.19	6.29
+L. luteus (C102)	freezing	2	1.12	0.24	2.94	3.09	0.23	7.62
+L. luteus (C102)	freezing	3	2.07	0.35	2.13	2.85	0.19	7.59
+L. luteus (C102)	freezing	4	1.03	0.1	1.77	2.84	0	5.74
+L. luteus (C98)	control	0	1.4	0.36	2.29	3.22	0.52	7.79
+L. luteus (C98)	control	1	1.37	0.36	2.18	4.65	0.42	8.98
+L. luteus (C98)	control	2	2.24	0.29	2.89	4.18	0.47	10.07
+L. luteus (C98)	control	3	1.02	0.44	2.9	3.39	0.4	8.15
+L. luteus (C98)	control	4	1.89	0.5	3.42	3.23	0.47	9.51
+L. luteus (C98)	freezing	0	4.25	0.46	1.93	1.72	0	8.36
+L. luteus (C98)	freezing	1	5.42	0.17	2.2	2.22	0.18	10.19
+L. luteus (C98)	freezing	2	5.42	0.17	2.2	2.22	0.19	10.2
+L. luteus (C98)	freezing	3	2.76	0.13	4.05	2.85	0.23	10.02
+L. luteus (C98)	freezing	4	2.99	0.18	3.94	0.98	0.19	8.28
+L. luteus (C195)	control	0	1.29	0.46	1.54	1.56	0	4.85
+L. luteus (C195)	control	1	1.29	0.46	1.54	1.56	0	4.85
+L. luteus (C195)	control	2	1.49	0.47	1.91	1.55	0	5.42
+L. luteus (C195)	control	3	1.49	0.69	1.02	1.9	0	5.1
+L. luteus (C195)	control	4	1.3	0.37	1.44	1.73	0	4.84
+L. luteus (C195)	freezing	0	3.41	0.05	3.12	1.94	0	8.52
+L. luteus (C195)	freezing	1	3.32	0.03	3.19	1.64	0.13	8.31
+L. luteus (C195)	freezing	2	3.4	0.06	3.14	1.54	0	8.14
+L. luteus (C195)	freezing	3	3.13	0.06	3.49	1.92	0.12	8.72
+L. luteus (C195)	freezing	4	3.89	0.05	3.78	1.97	0.16	9.85
+L. luteus (C226)	control	0	1.33	0.47	3.63	2.14	0	7.57
+L. luteus (C226)	control	1	0.96	0.58	2.77	3.21	0	7.52
+L. luteus (C226)	control	2	1.33	0.4	3.37	3.02	0	8.12
+L. luteus (C226)	control	3	1.16	0.62	3.19	3.16	0	8.13
+L. luteus (C226)	control	4	0.66	0.3	2.67	3.76	0	7.39
+L. luteus (C226)	freezing	0	3.81	0.06	2.87	2.53	0.19	9.46
+L. luteus (C226)	freezing	1	2.51	0.09	2.28	1.34	0.19	6.41
+L. luteus (C226)	freezing	2	2.03	0.05	2.28	2.82	0.29	7.47
+L. luteus (C226)	freezing	3	2.36	0.06	2.1	2.76	0.12	7.4
+L. luteus (C226)	freezing	4	2.08	0.04	2.62	2.45	0.27	7.46

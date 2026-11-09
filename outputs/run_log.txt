@@ -68,3 +68,6 @@ Figuras
   Fig6_recovery_LT50.png, Fig6_recovery_LT50.tif
   Fig7_sugars_recovery.png, Fig7_sugars_recovery.tif
   Fig8_sugars_LT50.png, Fig8_sugars_LT50.tif
+
+Documentación (.md) y datos usados (.txt)
+  outputs/docs/figures, outputs/docs/analyses, outputs/data_txt

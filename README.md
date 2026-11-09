@@ -18,6 +18,17 @@ python run_all.py
 La salida queda en `outputs/figures` (PNG y TIFF LZW a 300 dpi), `outputs/tables` (CSV) y
 `outputs/run_log.txt`.
 
+## Documentación por figura y por análisis
+
+`run_all.py` también escribe:
+
+- `outputs/docs/figures/*.md`: un archivo por figura (S1, S2, 2, 3, 4B/D, 5, 6, 7, 8) con qué
+  muestra, de dónde salen los datos, los valores por grupo y las notas pertinentes.
+- `outputs/docs/analyses/*.md`: Tabla S1 (ANOVA y Tukey), PERMANOVA, regresiones, pruebas de
+  Welch y control de calidad, con método y resultados.
+- `outputs/data_txt/*_data.txt`: los datos exactos que usa cada figura y cada análisis, ya
+  limpios y con la corrección aplicada (tabulado, punto decimal, encabezado con `#`).
+
 ## Qué produce
 
 | Salida | Datos de entrada | Estado |

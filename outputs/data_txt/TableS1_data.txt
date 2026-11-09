@@ -1,0 +1,829 @@
+# Datos de la Tabla S1 en formato largo: level / group / variable / value.
+# FP de L. luteus (especie) = las 60 hojas de las cuatro accesiones.
+# Daño de especies: una fila por planta (n = 5). Resto: una fila por hoja.
+level	group	variable	value
+species	L. luteus	FP	-2.607
+species	L. luteus	FP	-2.528
+species	L. luteus	FP	-2.532
+species	L. luteus	FP	-2.605
+species	L. luteus	FP	-2.774
+species	L. luteus	FP	-2.14
+species	L. luteus	FP	-2.538
+species	L. luteus	FP	-2.246
+species	L. luteus	FP	-2.128
+species	L. luteus	FP	-2.509
+species	L. luteus	FP	-2.14
+species	L. luteus	FP	-2.538
+species	L. luteus	FP	-2.246
+species	L. luteus	FP	-2.128
+species	L. luteus	FP	-2.509
+species	L. luteus	FP	-2.412
+species	L. luteus	FP	-2.096
+species	L. luteus	FP	-3.026
+species	L. luteus	FP	-4.556
+species	L. luteus	FP	-2.819
+species	L. luteus	FP	-2.559
+species	L. luteus	FP	-3.001
+species	L. luteus	FP	-2.943
+species	L. luteus	FP	-2.099
+species	L. luteus	FP	-2.818
+species	L. luteus	FP	-2.559
+species	L. luteus	FP	-3.001
+species	L. luteus	FP	-2.943
+species	L. luteus	FP	-2.099
+species	L. luteus	FP	-2.818
+species	L. luteus	FP	-6.808
+species	L. luteus	FP	-4.503
+species	L. luteus	FP	-5.347
+species	L. luteus	FP	-5.527
+species	L. luteus	FP	-5.528
+species	L. luteus	FP	-5.555
+species	L. luteus	FP	-2.829
+species	L. luteus	FP	-4.25
+species	L. luteus	FP	-4.025
+species	L. luteus	FP	-5.001
+species	L. luteus	FP	-5.555
+species	L. luteus	FP	-2.829
+species	L. luteus	FP	-4.25
+species	L. luteus	FP	-4.025
+species	L. luteus	FP	-5.001
+species	L. luteus	FP	-5.053
+species	L. luteus	FP	-4.219
+species	L. luteus	FP	-5.523
+species	L. luteus	FP	-5.058
+species	L. luteus	FP	-3.455
+species	L. luteus	FP	-2.997
+species	L. luteus	FP	-2.994
+species	L. luteus	FP	-3.231
+species	L. luteus	FP	-4.321
+species	L. luteus	FP	-3.466
+species	L. luteus	FP	-2.997
+species	L. luteus	FP	-2.994
+species	L. luteus	FP	-3.231
+species	L. luteus	FP	-4.321
+species	L. luteus	FP	-3.466
+species	L. albus	FP	-5.226
+species	L. albus	FP	-4.715
+species	L. albus	FP	-3.058
+species	L. albus	FP	-3.689
+species	L. albus	FP	-2.358
+species	L. albus	FP	-3.124
+species	L. albus	FP	-3.551
+species	L. albus	FP	-3.705
+species	L. albus	FP	-2.983
+species	L. albus	FP	-2.884
+species	L. albus	FP	-3.124
+species	L. albus	FP	-3.551
+species	L. albus	FP	-3.705
+species	L. albus	FP	-2.983
+species	L. albus	FP	-2.884
+species	L. angustifolius	FP	-3.57
+species	L. angustifolius	FP	-4.549
+species	L. angustifolius	FP	-4.755
+species	L. angustifolius	FP	-3.43
+species	L. angustifolius	FP	-3.99
+species	L. angustifolius	FP	-4.31
+species	L. angustifolius	FP	-4.55
+species	L. angustifolius	FP	-3.89
+species	L. angustifolius	FP	-3.88
+species	L. angustifolius	FP	-4.754
+species	L. angustifolius	FP	-4.31
+species	L. angustifolius	FP	-4.55
+species	L. angustifolius	FP	-3.89
+species	L. angustifolius	FP	-3.88
+species	L. angustifolius	FP	-4.754
+species	P. sativum	FP	-2.552
+species	P. sativum	FP	-2.334
+species	P. sativum	FP	-2.526
+species	P. sativum	FP	-2.357
+species	P. sativum	FP	-2.339
+species	P. sativum	FP	-2.521
+species	P. sativum	FP	-2.331
+species	P. sativum	FP	-2.441
+species	P. sativum	FP	-2.551
+species	P. sativum	FP	-2.133
+species	P. sativum	FP	-2.521
+species	P. sativum	FP	-2.331
+species	P. sativum	FP	-2.441
+species	P. sativum	FP	-2.551
+species	P. sativum	FP	-2.133
+species	V. faba	FP	-4.694
+species	V. faba	FP	-4.652
+species	V. faba	FP	-4.414
+species	V. faba	FP	-3.92
+species	V. faba	FP	-4.121
+species	V. faba	FP	-3.881
+species	V. faba	FP	-3.332
+species	V. faba	FP	-3.412
+species	V. faba	FP	-3.632
+species	V. faba	FP	-4.012
+species	V. faba	FP	-3.881
+species	V. faba	FP	-3.332
+species	V. faba	FP	-3.412
+species	V. faba	FP	-3.632
+species	V. faba	FP	-4.012
+species	L. mutabilis	FP	-1.939
+species	L. mutabilis	FP	-1.971
+species	L. mutabilis	FP	-2.046
+species	L. mutabilis	FP	-1.899
+species	L. mutabilis	FP	-1.432
+species	L. mutabilis	FP	-1.366
+species	L. mutabilis	FP	-1.422
+species	L. mutabilis	FP	-1.432
+species	L. mutabilis	FP	-2.031
+species	L. mutabilis	FP	-1.993
+species	L. mutabilis	FP	-1.432
+species	L. mutabilis	FP	-1.366
+species	L. mutabilis	FP	-1.422
+species	L. mutabilis	FP	-1.432
+species	L. mutabilis	FP	-2.031
+species	L. mutabilis	INT	-5.5
+species	L. mutabilis	INT	-5.5
+species	L. mutabilis	INT	-5.5
+species	L. mutabilis	INT	-5.5
+species	L. mutabilis	INT	-5.49
+species	L. mutabilis	INT	-5.45
+species	L. mutabilis	INT	-5.45
+species	L. mutabilis	INT	-5.24
+species	L. mutabilis	INT	-5.24
+species	L. mutabilis	INT	-5.22
+species	L. mutabilis	INT	-4.94
+species	L. mutabilis	INT	-4.94
+species	L. mutabilis	INT	-4.85
+species	L. mutabilis	INT	-3.94
+species	L. mutabilis	INT	-3.6
+species	P. sativum	INT	-4.19
+species	P. sativum	INT	-4.49
+species	P. sativum	INT	-5.23
+species	P. sativum	INT	-4.22
+species	P. sativum	INT	-5.1
+species	P. sativum	INT	-5
+species	P. sativum	INT	-4.89
+species	P. sativum	INT	-4.4
+species	P. sativum	INT	-4.34
+species	P. sativum	INT	-4.21
+species	P. sativum	INT	-5
+species	P. sativum	INT	-4.89
+species	P. sativum	INT	-4.4
+species	P. sativum	INT	-4.34
+species	P. sativum	INT	-4.21
+species	L. luteus	INT	-9.24
+species	L. luteus	INT	-8.77
+species	L. luteus	INT	-9.17
+species	L. luteus	INT	-9.29
+species	L. luteus	INT	-9.09
+species	L. luteus	INT	-8.48
+species	L. luteus	INT	-9.03
+species	L. luteus	INT	-8.44
+species	L. luteus	INT	-9.02
+species	L. luteus	INT	-8.72
+species	L. luteus	INT	-8.48
+species	L. luteus	INT	-9.03
+species	L. luteus	INT	-8.07
+species	L. luteus	INT	-8.97
+species	L. luteus	INT	-8.69
+species	L. albus	INT	-6.89
+species	L. albus	INT	-6.82
+species	L. albus	INT	-6.03
+species	L. albus	INT	-5.66
+species	L. albus	INT	-5.8
+species	L. albus	INT	-5.58
+species	L. albus	INT	-5.58
+species	L. albus	INT	-5.32
+species	L. albus	INT	-5.32
+species	L. albus	INT	-5.43
+species	L. albus	INT	-5.73
+species	L. albus	INT	-5.66
+species	L. albus	INT	-6.72
+species	L. albus	INT	-6.78
+species	L. albus	INT	-6.88
+species	L. angustifolius	INT	-4.71
+species	L. angustifolius	INT	-6.08
+species	L. angustifolius	INT	-6.52
+species	L. angustifolius	INT	-5.88
+species	L. angustifolius	INT	-5.34
+species	L. angustifolius	INT	-6.31
+species	L. angustifolius	INT	-6.28
+species	L. angustifolius	INT	-6.28
+species	L. angustifolius	INT	-5.08
+species	L. angustifolius	INT	-5.11
+species	L. angustifolius	INT	-6.31
+species	L. angustifolius	INT	-6.28
+species	L. angustifolius	INT	-6.28
+species	L. angustifolius	INT	-5.08
+species	L. angustifolius	INT	-5.11
+species	V. faba	INT	-5.45
+species	V. faba	INT	-5.53
+species	V. faba	INT	-5.15
+species	V. faba	INT	-4.78
+species	V. faba	INT	-4.47
+species	V. faba	INT	-4.27
+species	V. faba	INT	-5.44
+species	V. faba	INT	-5.88
+species	V. faba	INT	-5.43
+species	V. faba	INT	-4.69
+species	V. faba	INT	-4.27
+species	V. faba	INT	-5.44
+species	V. faba	INT	-5.88
+species	V. faba	INT	-5.43
+species	V. faba	INT	-4.69
+species	L. mutabilis	LT10	5.62
+species	L. mutabilis	LT10	7.3
+species	L. mutabilis	LT10	5.09
+species	L. mutabilis	LT10	5.19
+species	L. mutabilis	LT10	6.4
+species	L. mutabilis	LT10	6.2
+species	L. mutabilis	LT10	3.85
+species	L. mutabilis	LT10	3.66
+species	P. sativum	LT10	1.86
+species	P. sativum	LT10	1.1
+species	P. sativum	LT10	10.64
+species	P. sativum	LT10	2.2
+species	P. sativum	LT10	3.02
+species	P. sativum	LT10	5.35
+species	P. sativum	LT10	8.06
+species	P. sativum	LT10	2.45
+species	P. sativum	LT10	1.79
+species	P. sativum	LT10	3.85
+species	L. luteus	LT10	-1.28
+species	L. luteus	LT10	-1.33
+species	L. luteus	LT10	-2.08
+species	L. luteus	LT10	0.79
+species	L. luteus	LT10	-0.21
+species	L. luteus	LT10	-1.36
+species	L. luteus	LT10	-3.34
+species	L. luteus	LT10	-1.82
+species	L. luteus	LT10	-2.07
+species	L. luteus	LT10	-0.88
+species	L. luteus	LT10	-2.01
+species	L. luteus	LT10	-1.63
+species	L. luteus	LT10	-1.79
+species	L. luteus	LT10	-1.06
+species	L. albus	LT10	-2.72
+species	L. albus	LT10	-3.42
+species	L. albus	LT10	-1.92
+species	L. albus	LT10	-3.77
+species	L. albus	LT10	-1.3
+species	L. albus	LT10	-4.11
+species	L. albus	LT10	-1.78
+species	L. albus	LT10	-2.73
+species	L. albus	LT10	-3.06
+species	L. albus	LT10	-1.37
+species	L. albus	LT10	-2.87
+species	L. albus	LT10	-2.73
+species	L. angustifolius	LT10	-1.35
+species	L. angustifolius	LT10	-2.73
+species	L. angustifolius	LT10	-2.71
+species	L. angustifolius	LT10	-1.18
+species	L. angustifolius	LT10	-1.85
+species	L. angustifolius	LT10	-0.5
+species	L. angustifolius	LT10	-1.85
+species	L. angustifolius	LT10	-1.36
+species	L. angustifolius	LT10	-0.71
+species	L. angustifolius	LT10	-1.33
+species	L. angustifolius	LT10	-1.18
+species	L. angustifolius	LT10	-1.19
+species	V. faba	LT10	-3.08
+species	V. faba	LT10	-2.88
+species	V. faba	LT10	-3.96
+species	V. faba	LT10	-3.38
+species	V. faba	LT10	-3.57
+species	V. faba	LT10	-3.41
+species	V. faba	LT10	-3.36
+species	V. faba	LT10	-2.61
+species	V. faba	LT10	-3.35
+species	V. faba	LT10	-2.42
+species	L. mutabilis	LT50	-0.64
+species	L. mutabilis	LT50	-0.58
+species	L. mutabilis	LT50	-0.48
+species	L. mutabilis	LT50	-0.45
+species	L. mutabilis	LT50	-0.46
+species	L. mutabilis	LT50	-0.47
+species	L. mutabilis	LT50	-0.43
+species	L. mutabilis	LT50	-0.58
+species	L. mutabilis	LT50	-0.55
+species	L. mutabilis	LT50	-0.46
+species	L. mutabilis	LT50	-0.54
+species	L. mutabilis	LT50	-0.63
+species	L. mutabilis	LT50	-0.56
+species	L. mutabilis	LT50	-0.44
+species	L. mutabilis	LT50	-0.48
+species	P. sativum	LT50	-5.29
+species	P. sativum	LT50	-5.09
+species	P. sativum	LT50	-5.28
+species	P. sativum	LT50	-4.85
+species	P. sativum	LT50	-4.49
+species	P. sativum	LT50	-4.96
+species	P. sativum	LT50	-5
+species	P. sativum	LT50	-4.48
+species	P. sativum	LT50	-4.94
+species	P. sativum	LT50	-4.79
+species	P. sativum	LT50	-4.96
+species	P. sativum	LT50	-5
+species	P. sativum	LT50	-4.48
+species	P. sativum	LT50	-4.94
+species	P. sativum	LT50	-4.79
+species	L. luteus	LT50	-5.64
+species	L. luteus	LT50	-5.69
+species	L. luteus	LT50	-5.08
+species	L. luteus	LT50	-5.49
+species	L. luteus	LT50	-4.75
+species	L. luteus	LT50	-4.84
+species	L. luteus	LT50	-4.94
+species	L. luteus	LT50	-4.86
+species	L. luteus	LT50	-4.71
+species	L. luteus	LT50	-4.62
+species	L. luteus	LT50	-4.86
+species	L. luteus	LT50	-5
+species	L. luteus	LT50	-4.96
+species	L. luteus	LT50	-4.84
+species	L. luteus	LT50	-4.81
+species	L. albus	LT50	-7.39
+species	L. albus	LT50	-7.39
+species	L. albus	LT50	-6.43
+species	L. albus	LT50	-6.2
+species	L. albus	LT50	-6.32
+species	L. albus	LT50	-7.14
+species	L. albus	LT50	-7.12
+species	L. albus	LT50	-7.1
+species	L. albus	LT50	-7
+species	L. albus	LT50	-6.43
+species	L. albus	LT50	-6.45
+species	L. albus	LT50	-6.75
+species	L. albus	LT50	-6.98
+species	L. albus	LT50	-6.98
+species	L. albus	LT50	-5.73
+species	L. angustifolius	LT50	-6.29
+species	L. angustifolius	LT50	-7.4
+species	L. angustifolius	LT50	-7.82
+species	L. angustifolius	LT50	-6.38
+species	L. angustifolius	LT50	-7.61
+species	L. angustifolius	LT50	-7.94
+species	L. angustifolius	LT50	-6.82
+species	L. angustifolius	LT50	-5.05
+species	L. angustifolius	LT50	-6.7
+species	L. angustifolius	LT50	-7.7
+species	L. angustifolius	LT50	-7.94
+species	L. angustifolius	LT50	-6.82
+species	L. angustifolius	LT50	-5.05
+species	L. angustifolius	LT50	-6.7
+species	L. angustifolius	LT50	-7.7
+species	V. faba	LT50	-10.71
+species	V. faba	LT50	-10.34
+species	V. faba	LT50	-11.18
+species	V. faba	LT50	-10.83
+species	V. faba	LT50	-10.93
+species	V. faba	LT50	-10.83
+species	V. faba	LT50	-10.78
+species	V. faba	LT50	-10.21
+species	V. faba	LT50	-10.56
+species	V. faba	LT50	-11.18
+species	V. faba	LT50	-10.83
+species	V. faba	LT50	-10.78
+species	V. faba	LT50	-10.21
+species	V. faba	LT50	-10.56
+species	V. faba	LT50	-11.18
+species	L. mutabilis	LT90	-5.94
+species	L. mutabilis	LT90	-5.74
+species	L. mutabilis	LT90	-5.97
+species	L. mutabilis	LT90	-6.32
+species	L. mutabilis	LT90	-6.23
+species	L. mutabilis	LT90	-5.87
+species	L. mutabilis	LT90	-5.02
+species	L. mutabilis	LT90	-4.93
+species	P. sativum	LT90	-11.44
+species	P. sativum	LT90	-11.69
+species	P. sativum	LT90	-20.84
+species	P. sativum	LT90	-12.77
+species	P. sativum	LT90	-12.72
+species	P. sativum	LT90	-14.34
+species	P. sativum	LT90	-16.25
+species	P. sativum	LT90	-12.38
+species	P. sativum	LT90	-11.79
+species	P. sativum	LT90	-12.82
+species	L. luteus	LT90	-12.16
+species	L. luteus	LT90	-11.76
+species	L. luteus	LT90	-8.93
+species	L. luteus	LT90	-12.78
+species	L. luteus	LT90	-9.99
+species	L. luteus	LT90	-11.18
+species	L. luteus	LT90	-7.81
+species	L. luteus	LT90	-7.86
+species	L. luteus	LT90	-7.41
+species	L. luteus	LT90	-7.9
+species	L. luteus	LT90	-8.24
+species	L. luteus	LT90	-7.98
+species	L. luteus	LT90	-7.51
+species	L. luteus	LT90	-5.29
+species	L. albus	LT90	-13.91
+species	L. albus	LT90	-11.35
+species	L. albus	LT90	-7.52
+species	L. albus	LT90	-12.66
+species	L. albus	LT90	-10.16
+species	L. albus	LT90	-12.28
+species	L. albus	LT90	-10.86
+species	L. albus	LT90	-11.55
+species	L. albus	LT90	-16.28
+species	L. albus	LT90	-9.49
+species	L. albus	LT90	-11.09
+species	L. albus	LT90	-18.58
+species	L. angustifolius	LT90	-11.24
+species	L. angustifolius	LT90	-12.06
+species	L. angustifolius	LT90	-12.92
+species	L. angustifolius	LT90	-11.58
+species	L. angustifolius	LT90	-13.37
+species	L. angustifolius	LT90	-15.37
+species	L. angustifolius	LT90	-11.79
+species	L. angustifolius	LT90	-8.74
+species	L. angustifolius	LT90	-12.68
+species	L. angustifolius	LT90	-14.07
+species	L. angustifolius	LT90	-11.95
+species	L. angustifolius	LT90	-10.93
+species	V. faba	LT90	-18.34
+species	V. faba	LT90	-17.79
+species	V. faba	LT90	-18.4
+species	V. faba	LT90	-18.27
+species	V. faba	LT90	-18.28
+species	V. faba	LT90	-18.25
+species	V. faba	LT90	-18.2
+species	V. faba	LT90	-17.81
+species	V. faba	LT90	-17.77
+species	V. faba	LT90	-16.9
+species	V. faba	damage	68.2
+species	V. faba	damage	68
+species	V. faba	damage	48.2
+species	V. faba	damage	45.6
+species	V. faba	damage	43.9
+species	L. albus	damage	38.3
+species	L. albus	damage	38.6
+species	L. albus	damage	34.5
+species	L. albus	damage	27.3
+species	L. albus	damage	35.9
+species	L. angustifolius	damage	83.5
+species	L. angustifolius	damage	84.9
+species	L. angustifolius	damage	84.6
+species	L. angustifolius	damage	77.2
+species	L. angustifolius	damage	79.9
+species	P. sativum	damage	36.8
+species	P. sativum	damage	35.6
+species	P. sativum	damage	28.2
+species	P. sativum	damage	44
+species	P. sativum	damage	41.8
+species	L. mutabilis	damage	97.9
+species	L. mutabilis	damage	97.8
+species	L. mutabilis	damage	97.9
+species	L. mutabilis	damage	97.9
+species	L. mutabilis	damage	97.1
+species	L. luteus	damage	57.5
+species	L. luteus	damage	54.6
+species	L. luteus	damage	52
+species	L. luteus	damage	51
+species	L. luteus	damage	50.4
+accessions	L. luteus (C98)	FP	-2.607
+accessions	L. luteus (C98)	FP	-2.528
+accessions	L. luteus (C98)	FP	-2.532
+accessions	L. luteus (C98)	FP	-2.605
+accessions	L. luteus (C98)	FP	-2.774
+accessions	L. luteus (C98)	FP	-2.14
+accessions	L. luteus (C98)	FP	-2.538
+accessions	L. luteus (C98)	FP	-2.246
+accessions	L. luteus (C98)	FP	-2.128
+accessions	L. luteus (C98)	FP	-2.509
+accessions	L. luteus (C98)	FP	-2.14
+accessions	L. luteus (C98)	FP	-2.538
+accessions	L. luteus (C98)	FP	-2.246
+accessions	L. luteus (C98)	FP	-2.128
+accessions	L. luteus (C98)	FP	-2.509
+accessions	L. luteus (C195)	FP	-2.412
+accessions	L. luteus (C195)	FP	-2.096
+accessions	L. luteus (C195)	FP	-3.026
+accessions	L. luteus (C195)	FP	-4.556
+accessions	L. luteus (C195)	FP	-2.819
+accessions	L. luteus (C195)	FP	-2.559
+accessions	L. luteus (C195)	FP	-3.001
+accessions	L. luteus (C195)	FP	-2.943
+accessions	L. luteus (C195)	FP	-2.099
+accessions	L. luteus (C195)	FP	-2.818
+accessions	L. luteus (C195)	FP	-2.559
+accessions	L. luteus (C195)	FP	-3.001
+accessions	L. luteus (C195)	FP	-2.943
+accessions	L. luteus (C195)	FP	-2.099
+accessions	L. luteus (C195)	FP	-2.818
+accessions	L. luteus (C102)	FP	-6.808
+accessions	L. luteus (C102)	FP	-4.503
+accessions	L. luteus (C102)	FP	-5.347
+accessions	L. luteus (C102)	FP	-5.527
+accessions	L. luteus (C102)	FP	-5.528
+accessions	L. luteus (C102)	FP	-5.555
+accessions	L. luteus (C102)	FP	-2.829
+accessions	L. luteus (C102)	FP	-4.25
+accessions	L. luteus (C102)	FP	-4.025
+accessions	L. luteus (C102)	FP	-5.001
+accessions	L. luteus (C102)	FP	-5.555
+accessions	L. luteus (C102)	FP	-2.829
+accessions	L. luteus (C102)	FP	-4.25
+accessions	L. luteus (C102)	FP	-4.025
+accessions	L. luteus (C102)	FP	-5.001
+accessions	L. luteus (C226)	FP	-5.053
+accessions	L. luteus (C226)	FP	-4.219
+accessions	L. luteus (C226)	FP	-5.523
+accessions	L. luteus (C226)	FP	-5.058
+accessions	L. luteus (C226)	FP	-3.455
+accessions	L. luteus (C226)	FP	-2.997
+accessions	L. luteus (C226)	FP	-2.994
+accessions	L. luteus (C226)	FP	-3.231
+accessions	L. luteus (C226)	FP	-4.321
+accessions	L. luteus (C226)	FP	-3.466
+accessions	L. luteus (C226)	FP	-2.997
+accessions	L. luteus (C226)	FP	-2.994
+accessions	L. luteus (C226)	FP	-3.231
+accessions	L. luteus (C226)	FP	-4.321
+accessions	L. luteus (C226)	FP	-3.466
+accessions	L. luteus (C98)	INT	-8.8
+accessions	L. luteus (C98)	INT	-7.8
+accessions	L. luteus (C98)	INT	-8.3
+accessions	L. luteus (C98)	INT	-7.02
+accessions	L. luteus (C98)	INT	-8.5
+accessions	L. luteus (C98)	INT	-7.993
+accessions	L. luteus (C98)	INT	-8.832
+accessions	L. luteus (C98)	INT	-8.511
+accessions	L. luteus (C98)	INT	-8.511
+accessions	L. luteus (C98)	INT	-7.994
+accessions	L. luteus (C98)	INT	-7.993
+accessions	L. luteus (C98)	INT	-8.832
+accessions	L. luteus (C98)	INT	-7.0432
+accessions	L. luteus (C98)	INT	-8.311
+accessions	L. luteus (C98)	INT	-7.882
+accessions	L. luteus (C195)	INT	-7.638
+accessions	L. luteus (C195)	INT	-6.495
+accessions	L. luteus (C195)	INT	-9.34
+accessions	L. luteus (C195)	INT	-9.748
+accessions	L. luteus (C195)	INT	-8.734
+accessions	L. luteus (C195)	INT	-8.48
+accessions	L. luteus (C195)	INT	-7.55
+accessions	L. luteus (C195)	INT	-6.938
+accessions	L. luteus (C195)	INT	-7.99
+accessions	L. luteus (C195)	INT	-9.332
+accessions	L. luteus (C195)	INT	-8.48
+accessions	L. luteus (C195)	INT	-7.55
+accessions	L. luteus (C195)	INT	-6.938
+accessions	L. luteus (C195)	INT	-7.99
+accessions	L. luteus (C195)	INT	-9.332
+accessions	L. luteus (C102)	INT	-11.298
+accessions	L. luteus (C102)	INT	-11.265
+accessions	L. luteus (C102)	INT	-9.513
+accessions	L. luteus (C102)	INT	-11.277
+accessions	L. luteus (C102)	INT	-11.277
+accessions	L. luteus (C102)	INT	-9.942
+accessions	L. luteus (C102)	INT	-9.942
+accessions	L. luteus (C102)	INT	-9.283
+accessions	L. luteus (C102)	INT	-10.564
+accessions	L. luteus (C102)	INT	-9.543
+accessions	L. luteus (C102)	INT	-9.942
+accessions	L. luteus (C102)	INT	-9.942
+accessions	L. luteus (C102)	INT	-9.283
+accessions	L. luteus (C102)	INT	-10.564
+accessions	L. luteus (C102)	INT	-9.543
+accessions	L. luteus (C226)	INT	-9.208
+accessions	L. luteus (C226)	INT	-9.539
+accessions	L. luteus (C226)	INT	-9.522
+accessions	L. luteus (C226)	INT	-9.095
+accessions	L. luteus (C226)	INT	-7.848
+accessions	L. luteus (C226)	INT	-7.488
+accessions	L. luteus (C226)	INT	-9.812
+accessions	L. luteus (C226)	INT	-9.024
+accessions	L. luteus (C226)	INT	-9.024
+accessions	L. luteus (C226)	INT	-7.994
+accessions	L. luteus (C226)	INT	-7.488
+accessions	L. luteus (C226)	INT	-9.812
+accessions	L. luteus (C226)	INT	-9.024
+accessions	L. luteus (C226)	INT	-9.024
+accessions	L. luteus (C226)	INT	-7.994
+accessions	L. luteus (C98)	LT10	-2.3128
+accessions	L. luteus (C98)	LT10	-2.9029
+accessions	L. luteus (C98)	LT10	-3.4818
+accessions	L. luteus (C98)	LT10	-0.4694
+accessions	L. luteus (C98)	LT10	-1.1759
+accessions	L. luteus (C98)	LT10	-1.333
+accessions	L. luteus (C98)	LT10	-2.6394
+accessions	L. luteus (C98)	LT10	-2.5124
+accessions	L. luteus (C98)	LT10	-2.9827
+accessions	L. luteus (C98)	LT10	-2.2141
+accessions	L. luteus (C98)	LT10	-2.6498
+accessions	L. luteus (C98)	LT10	-2.5951
+accessions	L. luteus (C98)	LT10	-2.2791
+accessions	L. luteus (C195)	LT10	1.5973
+accessions	L. luteus (C195)	LT10	4.2548
+accessions	L. luteus (C195)	LT10	-0.6362
+accessions	L. luteus (C195)	LT10	2.6264
+accessions	L. luteus (C195)	LT10	3.0872
+accessions	L. luteus (C195)	LT10	0.6215
+accessions	L. luteus (C195)	LT10	0.0761
+accessions	L. luteus (C195)	LT10	0.1585
+accessions	L. luteus (C195)	LT10	-0.7903
+accessions	L. luteus (C195)	LT10	0.2891
+accessions	L. luteus (C195)	LT10	0.0654
+accessions	L. luteus (C195)	LT10	0.6625
+accessions	L. luteus (C195)	LT10	0.376
+accessions	L. luteus (C195)	LT10	0.095
+accessions	L. luteus (C102)	LT10	-3.2057
+accessions	L. luteus (C102)	LT10	-4.1699
+accessions	L. luteus (C102)	LT10	-3.0661
+accessions	L. luteus (C102)	LT10	-2.6124
+accessions	L. luteus (C102)	LT10	-2.5907
+accessions	L. luteus (C102)	LT10	-2.7479
+accessions	L. luteus (C102)	LT10	-3.1471
+accessions	L. luteus (C102)	LT10	-3.2922
+accessions	L. luteus (C102)	LT10	-2.5701
+accessions	L. luteus (C102)	LT10	-2.277
+accessions	L. luteus (C102)	LT10	-3.1215
+accessions	L. luteus (C102)	LT10	-3.1905
+accessions	L. luteus (C102)	LT10	-3.2206
+accessions	L. luteus (C102)	LT10	-2.3369
+accessions	L. luteus (C226)	LT10	-1.201
+accessions	L. luteus (C226)	LT10	-2.4879
+accessions	L. luteus (C226)	LT10	-1.1274
+accessions	L. luteus (C226)	LT10	3.5986
+accessions	L. luteus (C226)	LT10	-0.1804
+accessions	L. luteus (C226)	LT10	-1.9734
+accessions	L. luteus (C226)	LT10	-1.6387
+accessions	L. luteus (C226)	LT10	-1.9545
+accessions	L. luteus (C226)	LT10	0.7017
+accessions	L. luteus (C226)	LT10	-2.3396
+accessions	L. luteus (C226)	LT10	-1.4085
+accessions	L. luteus (C226)	LT10	-2.0556
+accessions	L. luteus (C226)	LT10	-1.9857
+accessions	L. luteus (C98)	LT50	-7.51
+accessions	L. luteus (C98)	LT50	-7.55
+accessions	L. luteus (C98)	LT50	-6.92
+accessions	L. luteus (C98)	LT50	-6.95
+accessions	L. luteus (C98)	LT50	-5.64
+accessions	L. luteus (C98)	LT50	-5.61
+accessions	L. luteus (C98)	LT50	-5.48
+accessions	L. luteus (C98)	LT50	-5.41
+accessions	L. luteus (C98)	LT50	-5.32
+accessions	L. luteus (C98)	LT50	-5.32
+accessions	L. luteus (C98)	LT50	-5.7
+accessions	L. luteus (C98)	LT50	-5.73
+accessions	L. luteus (C98)	LT50	-5.8
+accessions	L. luteus (C98)	LT50	-5.85
+accessions	L. luteus (C98)	LT50	-6.1
+accessions	L. luteus (C195)	LT50	-3.2
+accessions	L. luteus (C195)	LT50	-4.61
+accessions	L. luteus (C195)	LT50	-2.59
+accessions	L. luteus (C195)	LT50	-4.63
+accessions	L. luteus (C195)	LT50	-3.04
+accessions	L. luteus (C195)	LT50	-3.22
+accessions	L. luteus (C195)	LT50	-3.26
+accessions	L. luteus (C195)	LT50	-3.59
+accessions	L. luteus (C195)	LT50	-3.33
+accessions	L. luteus (C195)	LT50	-3.45
+accessions	L. luteus (C195)	LT50	-3.22
+accessions	L. luteus (C195)	LT50	-3.26
+accessions	L. luteus (C195)	LT50	-3.59
+accessions	L. luteus (C195)	LT50	-3.33
+accessions	L. luteus (C195)	LT50	-3.45
+accessions	L. luteus (C102)	LT50	-6.37
+accessions	L. luteus (C102)	LT50	-6.52
+accessions	L. luteus (C102)	LT50	-6.66
+accessions	L. luteus (C102)	LT50	-6.23
+accessions	L. luteus (C102)	LT50	-5.8
+accessions	L. luteus (C102)	LT50	-5.98
+accessions	L. luteus (C102)	LT50	-6.29
+accessions	L. luteus (C102)	LT50	-6.3
+accessions	L. luteus (C102)	LT50	-6.1
+accessions	L. luteus (C102)	LT50	-6.11
+accessions	L. luteus (C102)	LT50	-5.98
+accessions	L. luteus (C102)	LT50	-6.29
+accessions	L. luteus (C102)	LT50	-6.3
+accessions	L. luteus (C102)	LT50	-6.1
+accessions	L. luteus (C102)	LT50	-6.11
+accessions	L. luteus (C226)	LT50	-5.46
+accessions	L. luteus (C226)	LT50	-4.09
+accessions	L. luteus (C226)	LT50	-4.14
+accessions	L. luteus (C226)	LT50	-4.16
+accessions	L. luteus (C226)	LT50	-4.52
+accessions	L. luteus (C226)	LT50	-4.53
+accessions	L. luteus (C226)	LT50	-4.73
+accessions	L. luteus (C226)	LT50	-4.14
+accessions	L. luteus (C226)	LT50	-4.07
+accessions	L. luteus (C226)	LT50	-3.58
+accessions	L. luteus (C226)	LT50	-4.53
+accessions	L. luteus (C226)	LT50	-4.73
+accessions	L. luteus (C226)	LT50	-4.14
+accessions	L. luteus (C226)	LT50	-4.07
+accessions	L. luteus (C226)	LT50	-3.58
+accessions	L. luteus (C98)	LT90	-13.0399
+accessions	L. luteus (C98)	LT90	-11.0058
+accessions	L. luteus (C98)	LT90	-11.9289
+accessions	L. luteus (C98)	LT90	-15.461
+accessions	L. luteus (C98)	LT90	-15.4892
+accessions	L. luteus (C98)	LT90	-15.8168
+accessions	L. luteus (C98)	LT90	-7.5634
+accessions	L. luteus (C98)	LT90	-8.1335
+accessions	L. luteus (C98)	LT90	-8.304
+accessions	L. luteus (C98)	LT90	-7.6924
+accessions	L. luteus (C98)	LT90	-8.316
+accessions	L. luteus (C98)	LT90	-8.225
+accessions	L. luteus (C98)	LT90	-8.0611
+accessions	L. luteus (C195)	LT90	-13.237
+accessions	L. luteus (C195)	LT90	-13.4698
+accessions	L. luteus (C195)	LT90	-4.5467
+accessions	L. luteus (C195)	LT90	-11.8879
+accessions	L. luteus (C195)	LT90	-6.5883
+accessions	L. luteus (C195)	LT90	-7.0597
+accessions	L. luteus (C195)	LT90	-6.6
+accessions	L. luteus (C195)	LT90	-7.3343
+accessions	L. luteus (C195)	LT90	-5.8606
+accessions	L. luteus (C195)	LT90	-6.2785
+accessions	L. luteus (C195)	LT90	-6.9676
+accessions	L. luteus (C195)	LT90	-7.8902
+accessions	L. luteus (C195)	LT90	-6.7784
+accessions	L. luteus (C195)	LT90	-6.1845
+accessions	L. luteus (C102)	LT90	-9.5343
+accessions	L. luteus (C102)	LT90	-8.8794
+accessions	L. luteus (C102)	LT90	-10.2571
+accessions	L. luteus (C102)	LT90	-9.847
+accessions	L. luteus (C102)	LT90	-9.018
+accessions	L. luteus (C102)	LT90	-9.2131
+accessions	L. luteus (C102)	LT90	-9.4236
+accessions	L. luteus (C102)	LT90	-9.3095
+accessions	L. luteus (C102)	LT90	-9.3126
+accessions	L. luteus (C102)	LT90	-9.7767
+accessions	L. luteus (C102)	LT90	-9.0992
+accessions	L. luteus (C102)	LT90	-9.0337
+accessions	L. luteus (C102)	LT90	-8.9889
+accessions	L. luteus (C102)	LT90	-8.6411
+accessions	L. luteus (C226)	LT90	-12.8459
+accessions	L. luteus (C226)	LT90	-13.7038
+accessions	L. luteus (C226)	LT90	-8.9968
+accessions	L. luteus (C226)	LT90	-13.9288
+accessions	L. luteus (C226)	LT90	-8.8637
+accessions	L. luteus (C226)	LT90	-12.6398
+accessions	L. luteus (C226)	LT90	-6.6452
+accessions	L. luteus (C226)	LT90	-6.1763
+accessions	L. luteus (C226)	LT90	-7.8618
+accessions	L. luteus (C226)	LT90	-8.5862
+accessions	L. luteus (C226)	LT90	-6.7647
+accessions	L. luteus (C226)	LT90	-6.2201
+accessions	L. luteus (C226)	LT90	-6.3387
+accessions	L. luteus (C195)	damage	93.4645
+accessions	L. luteus (C195)	damage	92.9147
+accessions	L. luteus (C195)	damage	92.2884
+accessions	L. luteus (C195)	damage	92.7915
+accessions	L. luteus (C195)	damage	93.2998
+accessions	L. luteus (C195)	damage	93.7817
+accessions	L. luteus (C195)	damage	94.4354
+accessions	L. luteus (C195)	damage	95.414
+accessions	L. luteus (C195)	damage	91.9105
+accessions	L. luteus (C195)	damage	94.6778
+accessions	L. luteus (C195)	damage	93.4978
+accessions	L. luteus (C195)	damage	93.5012
+accessions	L. luteus (C195)	damage	93.5598
+accessions	L. luteus (C195)	damage	93.6869
+accessions	L. luteus (C195)	damage	93.7765
+accessions	L. luteus (C102)	damage	12.3272
+accessions	L. luteus (C102)	damage	12.3369
+accessions	L. luteus (C102)	damage	3.4949
+accessions	L. luteus (C102)	damage	3.6445
+accessions	L. luteus (C102)	damage	2.36888
+accessions	L. luteus (C102)	damage	8.83701
+accessions	L. luteus (C102)	damage	9.87523
+accessions	L. luteus (C102)	damage	5.75263
+accessions	L. luteus (C102)	damage	7.83223
+accessions	L. luteus (C102)	damage	9.60149
+accessions	L. luteus (C102)	damage	7.60709
+accessions	L. luteus (C102)	damage	7.13508
+accessions	L. luteus (C102)	damage	6.61491
+accessions	L. luteus (C102)	damage	6.92691
+accessions	L. luteus (C102)	damage	7.25515
+accessions	L. luteus (C98)	damage	17.3484
+accessions	L. luteus (C98)	damage	19.3206
+accessions	L. luteus (C98)	damage	20.0762
+accessions	L. luteus (C98)	damage	20.2181
+accessions	L. luteus (C98)	damage	18.8166
+accessions	L. luteus (C98)	damage	17.9844
+accessions	L. luteus (C98)	damage	11.5587
+accessions	L. luteus (C98)	damage	15.207
+accessions	L. luteus (C98)	damage	8.22093
+accessions	L. luteus (C98)	damage	16.5279
+accessions	L. luteus (C98)	damage	16.4367
+accessions	L. luteus (C98)	damage	16.1163
+accessions	L. luteus (C98)	damage	15.6763
+accessions	L. luteus (C98)	damage	15.1717
+accessions	L. luteus (C98)	damage	16.0387
+accessions	L. luteus (C226)	damage	94.8837
+accessions	L. luteus (C226)	damage	94.4573
+accessions	L. luteus (C226)	damage	94.0426
+accessions	L. luteus (C226)	damage	95.898
+accessions	L. luteus (C226)	damage	90.896
+accessions	L. luteus (C226)	damage	94.3033
+accessions	L. luteus (C226)	damage	88.237
+accessions	L. luteus (C226)	damage	88.0663
+accessions	L. luteus (C226)	damage	88.0176
+accessions	L. luteus (C226)	damage	96.6582
+accessions	L. luteus (C226)	damage	92.546
+accessions	L. luteus (C226)	damage	92.3122
+accessions	L. luteus (C226)	damage	92.0977
+accessions	L. luteus (C226)	damage	91.9032
+accessions	L. luteus (C226)	damage	91.5038
